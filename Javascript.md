@@ -48,7 +48,7 @@ For looping through Array or Objects, instead of using `for` or `for in` loops, 
 
     Object.keys(obj)
         .every(function(element, index, array){
-            console.log(element);
+            console.log(obj[element]); // return the object property "element"
             console.log(array[index]);
         return true;
     });
