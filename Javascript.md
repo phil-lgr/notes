@@ -19,3 +19,13 @@ Always write
     return {
         ok: true 
     };
+
+#### Type coercion of `==`
+
+`==` does weird type coercion like
+
+    '' == '0'           // false
+    false == 'false'    // false
+    " \t\r\n " == 0     // true
+    
+Always use `===`
