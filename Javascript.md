@@ -54,3 +54,23 @@ For looping through Array or Objects, instead of using `for` or `for in` loops, 
     });
     
 The main difference between `Object.keys` and `for in` is the former will only loop through *own* *enumerable* properties of the passed object. 
+
+### Function
+
+`this` and `arguments`
+
+In a function, `arguments` contains a pseudo array (only has a few methods) which contains all arguments that were passed in:
+
+    function sum() {
+        var total = 0, i, len = arguments.length;
+        for(i = 0; i < len; i++){
+            total += Number(arguments[i]);
+        }
+        return total;
+    }
+    
+`this` parameter contains a reference to the object of invocation. It allows a method to know what object it is concerned with.
+
+    function(){
+        console.log(this); // if called in the global scope for example, this is the window object
+    }
