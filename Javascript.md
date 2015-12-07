@@ -36,10 +36,11 @@ Always use the radix for parseInt function:
 
     parseInt("12cows", 10);
 
+Since some environment may interpret `"012"` as octal number.
+
 ### String 
 
-- 16-bit 
-- 
+Strings in js are composed of 16-bit character.
 
 ### Statements
 
@@ -59,6 +60,8 @@ The main difference between `Object.keys` and `for in` is the former will only l
 
 `this` and `arguments`
 
+___
+
 In a function, `arguments` contains a pseudo array (only has a few methods) which contains all arguments that were passed in:
 
     function sum() {
@@ -74,3 +77,42 @@ In a function, `arguments` contains a pseudo array (only has a few methods) whic
     function(){
         console.log(this); // if called in the global scope for example, this is the window object
     }
+    
+Closures
+
+___
+
+
+Singleton pattern aka one returning one instance of an object containing 2 public methods:
+
+    var singleton = (function (){
+        var privateVariable;
+        function privateFunction(x){
+            // private variable stuff
+        }
+        return {
+            firstMethod: function(a, b){
+                // private variable
+            },
+            secondMethod: function(x){
+                // private function...
+            }
+        };
+    }())
+
+Immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.
+
+Constructor pattern:
+
+    function constructor(spec) {
+        // here we can call another constructor to inherit from
+        var service = otherConstructor(spec),
+            instance,
+            method = function() {
+                // spec, instance, method
+            };
+        service.method = method;
+        return service;
+    }
+
+The returned functions have access to private *(close over...)* variables or private methods. Returned functions are pushed on the memory heap and *because of closure* the inner variables and methods that were linked to returned functions in the constructor *won't* get garbage collected. They will live as long as the returned object lives.
