@@ -56,7 +56,7 @@ For looping through Array or Objects, instead of using `for` or `for in` loops, 
     
 The main difference between `Object.keys` and `for in` is the former will only loop through *own* *enumerable* properties of the passed object. 
 
-### Function
+### Functions
 
 `this` and `arguments`
 
@@ -83,7 +83,7 @@ Closures
 ___
 
 
-Singleton pattern aka one returning one instance of an object containing 2 public methods:
+Singleton pattern returns one instance of an object containing 2 public methods:
 
     var singleton = (function (){
         var privateVariable;
@@ -100,19 +100,22 @@ Singleton pattern aka one returning one instance of an object containing 2 publi
         };
     }())
 
-Immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.
+This immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.
 
 Constructor pattern:
 
     function constructor(spec) {
+        var privateValue;
         // here we can call another constructor to inherit from
         var service = otherConstructor(spec),
             instance,
             method = function() {
-                // spec, instance, method
+                // spec, instance, method, privateValue
             };
         service.method = method;
         return service;
     }
 
-The returned functions have access to private *(close over...)* variables or private methods. Returned functions are pushed on the memory heap and *because of closure* the inner variables and methods that were linked to returned functions in the constructor *won't* get garbage collected. They will live as long as the returned object lives.
+The returned object have access to private *(close over...)* variables or private methods. Returned functions are pushed on the memory heap and *because of closure* the inner variables and methods that were linked to returned functions in the constructor *won't* get garbage collected. They will live as long as the returned object lives.
+
+
