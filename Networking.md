@@ -1,6 +1,6 @@
 #Useful Networking Commands
 
-* Check latency of each network hop for a packet
+Check latency of each network hop for a packet
 
    `traceroute google.com`
 
