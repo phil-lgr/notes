@@ -1,3 +1,5 @@
+Some gotchas.. in JS
+
 #### !!! - Faulty expression statement
 
     return
