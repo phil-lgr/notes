@@ -50,7 +50,7 @@ For looping through Array or Objects, instead of using `for` or `for in` loops, 
 `Object.keys(obj)` returns an array of the own enumerable properties of the passed object.
 
     Object.keys(obj)
-        .every(function(element, index, array){
+        .every(function(element, index, array) {
             console.log(obj[element]); // return the object property "element"
             console.log(array[index]);
         return true;
@@ -68,7 +68,7 @@ In a function, `arguments` contains a pseudo array (only has a few methods) whic
 
     function sum() {
         var total = 0, i, len = arguments.length;
-        for(i = 0; i < len; i++){
+        for(i = 0; i < len; i++) {
             total += Number(arguments[i]);
         }
         return total;
@@ -76,7 +76,7 @@ In a function, `arguments` contains a pseudo array (only has a few methods) whic
     
 `this` parameter contains a reference to the object of invocation. It allows a method to know what object it is concerned with.
 
-    function(){
+    function() {
         console.log(this); // if called in the global scope for example, this is the window object
     }
     
@@ -87,16 +87,16 @@ ___
 
 ##### Singleton pattern returns one instance of an object containing 2 public methods:
 
-    var singleton = (function (){
+    var singleton = (function () {
         var privateVariable;
-        function privateFunction(x){
+        function privateFunction(x) {
             // private variable stuff
         }
         return {
-            firstMethod: function(a, b){
+            firstMethod: function(a, b) {
                 // private variable
             },
-            secondMethod: function(x){
+            secondMethod: function(x) {
                 // private function...
             }
         };
@@ -171,7 +171,7 @@ ___
     
 ##### A function that takes a binary function and an argument and can pass another argument
 
-    function curry(bin, first){
+    function curry(bin, first) {
       return liftf(bin)(first);
     }
 
@@ -181,9 +181,9 @@ ___
 
 *In ES6* we can use ellipsis:
 
-    function curryES6(func, ...first){
+    function curryES6(func, ...first) {
     // ellipsis ... takes all the args put them in an array and bind array to parameters
-      return function(...second){
+      return function(...second) {
         return func(...first, ...second);
       }
     }
@@ -198,8 +198,8 @@ ___
     
 ##### A function that takes a binary function that returns a unary function that passes its argument twice in the binary function:
     
-    function twice(bin){
-      return function(number){
+    function twice(bin) {
+      return function(number) {
         return bin(number, number);
       }
     }
@@ -210,8 +210,8 @@ ___
 
 ##### A function that reverse the order of the arguments of a binary function:
 
-    function reverse(bin){
-      return function(...args){
+    function reverse(bin) {
+      return function(...args) {
         return bin(...args.reverse());
       }
     }
@@ -221,8 +221,8 @@ ___
     
 ##### A function that takes two unary functions that returns a unary function that calls them both:
 
-    function composeu(unary1, unary2){
-      return function(number){
+    function composeu(unary1, unary2) {
+      return function(number) {
         return unary2(unary1(number));
       }
     }
@@ -231,8 +231,8 @@ ___
     
 ##### A function that takes two binary functions that returns a function that calls them both:
 
-    function composeb(bin1, bin2){
-      return function(a, b, c){
+    function composeb(bin1, bin2) {
+      return function(a, b, c) {
         return bin2(bin1(a, b), c);
       }
     }
@@ -241,10 +241,10 @@ ___
     
 ##### A function that limits the number of times a binary function can be invoked:
 
-    function limit(bin, limitN){
+    function limit(bin, limitN) {
       var counter = limitN || 1;
-      return function(a, b){
-        if(counter){
+      return function(a, b) {
+        if(counter) {
           counter -= 1;
           return bin(a, b);
         } else {
@@ -258,14 +258,58 @@ ___
     add_limited(1, 2); // 3
     add_limited(1, 2); // undefined
     
-##### A generator function that produces a series of number
+##### A generator function that produces a series of values:
 
-    function from(number){
-      return function(){
-        return number++;
+    function from(number) {
+      return function() {
+        return number++; // function closes over the outer function parameter
       }
     }
     
     var index = from(0);
     console.log(index()); // 0
     console.log(index()); // 1
+    
+##### A function that takes a generator and a end value that produces value up to that end value:
+
+    function to(gen, end) {
+      return function() {
+        var value = gen();
+        if (value < end) {
+          return value;
+        }
+      }
+    }
+    
+    var index = to(from(1), 3);
+    console.log(index()); // 1
+    console.log(index()); // 2
+    console.log(index()); // undefined
+    
+##### A function that takes a start and end value and produces a generator that will produce values in a range:
+
+    function fromTo(begin, end) {
+      return to(from(begin), end);
+    }
+    
+    var index = fromTo(0, 3);
+    console.log(index()); // 0
+    console.log(index()); // 1
+    console.log(index()); // 2
+    console.log(index()); // undefined
+    
+##### A function that takes an array and a generator that returns a generator that will produce elements from the array:
+
+    function element(array, fromToGen) {
+      return function() {
+        var index = fromToGen();
+        if (index !== undefined) { // protects the function from the array containing the value *undefined*
+          return array[index];
+        }
+      }
+    }
+    
+    var ele = element(['a', 'b', 'c', 'd'], fromTo(1, 3));
+    console.log(ele()); // b
+    console.log(ele()); // c
+    console.log(ele()); // undefined
