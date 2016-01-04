@@ -51,8 +51,8 @@ For looping through Array or Objects, instead of using `for` or `for in` loops, 
 
     Object.keys(obj)
         .every(function(element, index, array) {
-            console.log(obj[element]); // return the object property "element"
-            console.log(array[index]);
+            (obj[element]); // return the object property "element"
+            (array[index]);
         return true;
     });
     
@@ -77,7 +77,7 @@ In a function, `arguments` contains a pseudo array (only has a few methods) whic
 `this` parameter contains a reference to the object of invocation. It allows a method to know what object it is concerned with.
 
     function() {
-        console.log(this); // if called in the global scope for example, this is the window object
+        (this); // if called in the global scope for example, this is the window object
     }
     
 #### Examples of Function Closures
@@ -267,8 +267,8 @@ ___
     }
     
     var index = from(0);
-    console.log(index()); // 0
-    console.log(index()); // 1
+    index(); // 0
+    index(); // 1
     
 ##### A function that takes a generator and a end value that produces value up to that end value:
 
@@ -282,9 +282,9 @@ ___
     }
     
     var index = to(from(1), 3);
-    console.log(index()); // 1
-    console.log(index()); // 2
-    console.log(index()); // undefined
+    index(); // 1
+    index(); // 2
+    index(); // undefined
     
 ##### A function that takes a start and end value and produces a generator that will produce values in a range:
 
@@ -293,10 +293,10 @@ ___
     }
     
     var index = fromTo(0, 3);
-    console.log(index()); // 0
-    console.log(index()); // 1
-    console.log(index()); // 2
-    console.log(index()); // undefined
+    index(); // 0
+    index(); // 1
+    index(); // 2
+    index(); // undefined
     
 ##### A function that takes an array and a generator that returns a generator that will produce elements from the array:
 
@@ -310,6 +310,6 @@ ___
     }
     
     var ele = element(['a', 'b', 'c', 'd'], fromTo(1, 3));
-    console.log(ele()); // b
-    console.log(ele()); // c
-    console.log(ele()); // undefined
+    ele(); // b
+    ele(); // c
+    ele(); // undefined
