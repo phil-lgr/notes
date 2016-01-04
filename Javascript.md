@@ -1,6 +1,6 @@
-Some gotchas.. in JS
+# Some gotchas.. in JS
 
-#### !!! - Faulty expression statement
+### !!! - Faulty expression statement
 
     return
     
@@ -22,7 +22,7 @@ Always write
         ok: true 
     };
 
-#### Type coercion of `==`
+### Type coercion of `==`
 
 `==` does weird type coercion like
 
@@ -60,7 +60,7 @@ The main difference between `Object.keys` and `for in` is the former will only l
 
 ### Functions
 
-`this` and `arguments`
+#### `this` and `arguments`
 
 ___
 
@@ -80,12 +80,12 @@ In a function, `arguments` contains a pseudo array (only has a few methods) whic
         console.log(this); // if called in the global scope for example, this is the window object
     }
     
-Closures
+#### Examples of Function Closures
 
 ___
 
 
-Singleton pattern returns one instance of an object containing 2 public methods:
+##### Singleton pattern returns one instance of an object containing 2 public methods:
 
     var singleton = (function (){
         var privateVariable;
@@ -104,7 +104,7 @@ Singleton pattern returns one instance of an object containing 2 public methods:
 
 This immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.
 
-Constructor pattern:
+##### Constructor pattern:
 
     function constructor(spec) {
         var privateValue;
@@ -120,4 +120,152 @@ Constructor pattern:
 
 The returned object have access to private *(close over...)* variables or private methods. Returned functions are pushed on the memory heap and *because of closure* the inner variables and methods that were linked to returned functions in the constructor *won't* get garbage collected. They will live as long as the returned object lives.
 
+___
 
+#### Fun with functions
+
+##### Some simple unary functions:
+
+    function add(a, b) {
+      return a + b;
+    }
+    
+    function sub(a, b) {
+      return a - b;
+    }
+    
+    function mul(a, b) {
+      return a * b;
+    }
+
+##### A function that returns a function that returns the argument:
+
+    function identityf(number) {
+      return function() {
+        return number;
+      }
+    }
+
+##### A function that adds from two invocations:
+
+    function addf(outer) {
+      return function(inner) {
+        return outer + inner;
+      }
+    }
+    addf(3)(4);
+    
+##### A function that takes a binary function and makes it callable with two invocations
+*currying*: decomposing multiple arguments functions into multiple functions that takes a single argument
+
+    function liftf(bin) {
+      return function(first) {
+        return function(second) {
+          return bin(first, second);
+        }
+      }
+    }
+    var addf = liftf(add);
+    addf(3)(4);
+    liftf(mul)(5)(6);
+    
+##### A function that takes a binary function and an argument and can pass another argument
+
+    function curry(bin, first){
+      return liftf(bin)(first);
+    }
+
+    var add3 = curry(add, 3);
+    add3(4)
+    curry(mul, 5)(6);
+
+*In ES6* we can use ellipsis:
+
+    function curryES6(func, ...first){
+    // ellipsis ... takes all the args put them in an array and bind array to parameters
+      return function(...second){
+        return func(...first, ...second);
+      }
+    }
+    
+##### Functions that add 1 to arguments:
+
+    var inc = liftf(add)(1);
+    var inc2 = curry(add, 1);
+    var inc3 = addf(1);
+    inc3(5);
+    inc3(inc(5));
+    
+##### A function that takes a binary function that returns a unary function that passes its argument twice in the binary function:
+    
+    function twice(bin){
+      return function(number){
+        return bin(number, number);
+      }
+    }
+    var doubl = twice(add);
+    var square = twice(mul);
+    doubl(11); 
+    square(11);
+
+##### A function that reverse the order of the arguments of a binary function:
+
+    function reverse(bin){
+      return function(...args){
+        return bin(...args.reverse());
+      }
+    }
+
+    var bus = reverse(sub);
+    bus(3,2);
+    
+##### A function that takes two unary functions that returns a unary function that calls them both:
+
+    function composeu(unary1, unary2){
+      return function(number){
+        return unary2(unary1(number));
+      }
+    }
+    
+    composeu(doubl, square)(5); // 100
+    
+##### A function that takes two binary functions that returns a function that calls them both:
+
+    function composeb(bin1, bin2){
+      return function(a, b, c){
+        return bin2(bin1(a, b), c);
+      }
+    }
+    
+    composeb(add, mul)(2, 3, 7); // 35
+    
+##### A function that limits the number of times a binary function can be invoked:
+
+    function limit(bin, limitN){
+      var counter = limitN || 1;
+      return function(a, b){
+        if(counter){
+          counter -= 1;
+          return bin(a, b);
+        } else {
+          return undefined;
+        }
+      }
+    }
+    
+    var add_limited = limit(add, 2);
+    add_limited(1, 2); // 3
+    add_limited(1, 2); // 3
+    add_limited(1, 2); // undefined
+    
+##### A generator function that produces a series of number
+
+    function from(number){
+      return function(){
+        return number++;
+      }
+    }
+    
+    var index = from(0);
+    console.log(index()); // 0
+    console.log(index()); // 1
