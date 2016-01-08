@@ -1,4 +1,4 @@
-# Some gotchas.. in JS
+# Some gotchas.. in JS (ES5)
 
 ### !!! - Faulty expression statement
 
@@ -313,3 +313,52 @@ ___
     ele(); // b
     ele(); // c
     ele(); // undefined
+    
+With the generator optional:
+
+    function element(array, fromToGen) {
+      return function() {
+        var value;
+        // making the generator optional
+        // if (fromToGen === undefined) {
+        //   fromToGen = fromTo(0, array.length);
+        // }
+        // better, since we check if the passed argument is explicitely a function
+        if (typeof(fromToGen) !== "function") {
+          fromToGen = fromTo(0, array.length);
+        }
+        value = array[fromToGen()];
+    
+        if (value !== undefined) {
+          return value;
+        }
+      }
+    }
+    
+    var ele = element(['a', 'b', 'c', 'd']);
+    ele(); // b
+    ele(); // c
+    
+#### A function that takes a generator and an array and will produces a function that collects the result in the array:
+
+    function collect(gen, array){
+      return function(){
+        var value;
+        if(typeof(gen) !== "function"){
+          throw "gen must be a generator";
+        } else {
+          value = gen();
+          if(value !== undefined){
+            array.push(value);
+          }
+          return value;
+        }
+      }
+    }
+    
+    var array = [];
+    var col = collect(fromTo(0, 2), array);
+    col(); // 0
+    col(); // 1
+    col(); // undefined
+    array; // [0, 1]
