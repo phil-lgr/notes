@@ -362,3 +362,71 @@ With the generator optional:
     col(); // 1
     col(); // undefined
     array; // [0, 1]
+    
+#### A filter function that takes a generation and a predicate (function that returns bool) and produces a generator that produces only the values approuved by the predicate:
+
+    function filter(gen, predicate) {
+      return function() {
+        var value = gen();
+        while (value !== undefined) {
+          if (predicate(value)) {
+            return value;
+          }
+          value = gen();
+        }
+      }
+    }
+    
+    var fil = filter(fromTo(0, 5),
+      function third(value) {
+        return (value % 3) === 0;
+      });
+    
+    fil(); // 0
+    fil(); // 3
+    fil(); // undefined
+    
+#### A concat function that takes two generators and produce a generator that put them in sequence:
+
+    function concat(gen1, gen2) {
+      return function() {
+        var value;
+    
+        value = gen1();
+    
+        if (value !== undefined) {
+          return value;
+        }
+    
+        value = gen2();
+    
+        if (value !== undefined) {
+          return value;
+        }
+    
+      }
+    }
+    
+    var con = concat(fromTo(0, 3), fromTo(0, 2));
+    con(); // 0
+    con(); // 1
+    con(); // 2
+    con(); // 0
+    con(); // 1 
+    con(); // undefined
+
+#### A function that makes a function that takes a character string and generates unique symbols:
+
+    function gensymf(char){
+      var index = 1;
+      return function(){
+        return char+index++;
+      }
+    }
+    
+    var geng = gensymf("G"), genh = gensymf("H");
+    
+    geng(); // G1
+    geng(); // G2
+    genh(); // H1
+    genh(); // H2
