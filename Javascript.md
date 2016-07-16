@@ -1,4 +1,4 @@
-# Some gotchas.. in JS (ES5)
+# Some personal notes on tricky part of JavaScript
 
 ### !!! - Faulty expression statement
 
@@ -79,6 +79,32 @@ In a function, `arguments` contains a pseudo array (only has a few methods) whic
     function() {
         (this); // if called in the global scope for example, this is the window object
     }
+    
+An example of lexical `this` with the `Function.Prototype.bind()` method
+    
+    function mod(){
+        this.text = 'world';
+        function helloUndefined() {
+            return this.text;
+        }
+        function hello(){
+          this.text = 'hello'
+          return this.text;
+        }
+        function helloWithBind(){
+            return this.text;
+        }
+        return {
+            helloUndefined: helloUndefined,
+            hello: hello,
+            helloWithBind: helloWithBind.bind(this)
+            }
+    }
+    
+    var service = mod();
+    console.log(service.helloUndefined()); // underfined
+    console.log(service.hello()); // 'hello'
+    console.log(service.helloWithBind()); // 'world'
     
 #### Examples of Function Closures
 
