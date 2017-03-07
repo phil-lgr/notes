@@ -1,4 +1,4 @@
-# examples of fp style in js
+# Some example of functional programming constructs in JavaScript
 
 ##### Some simple unary functions:
 
