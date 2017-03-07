@@ -1,5 +1,5 @@
 # Notes/JavaScript
-> examples from Douglas Crockford's "JavaScript: The Good Parts"
+> examples mostly from Douglas Crockford's "JavaScript: The Good Parts"
 
 ### !!! - Faulty expression statement
 
@@ -148,3 +148,27 @@ This immediately invoked function will return the 2 methods which will have acce
 The returned object have access to private *(close over...)* variables or private methods. Returned functions are pushed on the memory heap and *because of closure* the inner variables and methods that were linked to returned functions in the constructor *won't* get garbage collected. They will live as long as the returned object lives.
 
 ___
+
+### Inheritance (ES5)
+
+#### Class and Subclass with Object.create()
+
+    function Car() {
+        this.age = 12;
+        this.grow = function grow() {
+            this.age += 1;
+        }
+    }
+    
+    function Honda() {
+        Car.call(this); // to inherit props
+        this.age = 14;
+    }
+    
+    Honda.prototype = Object.create(Car.prototype); // sets proto, but overrides the constructor;
+    Honda.prototype.constructor = Honda; // this is probably what we want
+    
+    var honda1 = new Honda();
+    honda1.age = 14;
+    honda1.grow();
+    console.log(honda1.age); // 15;
