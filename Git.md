@@ -113,4 +113,7 @@ git bisect bad
 
 # exit bisect
 git bisect reset
+
+# start ignoring file
+git update-index --assume-unchanged ./path/to/file
 ```
