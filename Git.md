@@ -44,6 +44,11 @@ git stash
 # merge stashed changes to local
 git stash apply
 
+# check which changes you are about to pull
+git checkout feature/fonts
+git fetch
+git log --oneline --no-merges ..origin/feature/fonts
+
 # display last commits, navigate like in vim
 git log
 
@@ -58,6 +63,7 @@ git log --decorate
 
 # display git branches as graphs
 git log --graph
+git log --graph --all --decorate --stat --date=iso
 
 # display details and code changes of each commit
 git log -p
@@ -68,8 +74,25 @@ git log -3
 # grep the commit messages for "copyright"
 git log --grep="copyright"
 
+# see what's everyone has been getting to
+git log --all --oneline --no-merges
+git log --all --since='2 weeks' --oneline --no-merges
+
+# show who has committed
+git shortlog -sn
+
+# over a period of time
+git shortlog -sn --since='10 weeks' --until='2 weeks'
+
+# review what you are about to push
+git fetch
+git log --oneline --no-merges <remote>/<branch>..HEAD
+
 # show difference of commited changes vs local
 git diff
+
+# diff without whitespace
+git diff -w
 
 # display differences of local (cached and commited) vs the HEAD
 git diff HEAD --stat
