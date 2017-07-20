@@ -139,4 +139,7 @@ git bisect reset
 
 # start ignoring file
 git update-index --assume-unchanged ./path/to/file
+
+# create alias
+git config --global alias.unstage 'reset HEAD --'
 ```
