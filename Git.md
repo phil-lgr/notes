@@ -146,5 +146,6 @@ git config --global alias.unstage 'reset HEAD --'
 # common aliases
 git config --global alias.a 'commit --all'
 git config --global alias.p 'push'
+git config --global alias.s 'status'
 git config --global alias.up 'pull upstream master'
 ```
