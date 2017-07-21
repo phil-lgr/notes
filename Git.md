@@ -142,4 +142,9 @@ git update-index --assume-unchanged ./path/to/file
 
 # create alias
 git config --global alias.unstage 'reset HEAD --'
+
+# common aliases
+git config --global alias.a 'commit --all'
+git config --global alias.p 'push'
+git config --global alias.up 'pull upstream master'
 ```
