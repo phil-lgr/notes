@@ -29,6 +29,9 @@ git checkout branch-name
 # create branch-name and checkout
 git checkout -b branch-name
 
+# checkout from a differente remote
+git checkout -b <branchname> --track upstream/<branchname>
+
 # change to last branch
 git checkout -
 
