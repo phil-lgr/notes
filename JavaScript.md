@@ -37,6 +37,36 @@ ___
 #### Scope
 
 _Where to look for things_
+
+Example of how the JS engine parses variable and function declaration on the first pass (compilation):
+
+    var foo = "bar"; // does foo exist in the scope ? let's create it.
+    
+    function bar() { // does bar exist in the scope ? let's create it.
+        console.log(foo); // not a declaration
+        var foo = "baz"; // another LHS (left handed assignment)
+        console.log(foo); // not a declaration
+    }
+    
+    function baz(foo /* foo is created as formal variable inside (declaration) of baz */) { // create baz 
+        foo = "bam"; // not a declaration
+        bam = "yay"; // can't imply anything about bam
+    }
+    
+On the second pass (execution):
+
+    var foo = "bar"; // does foo exist ? ok, assign it the "bar" value.
+    
+    function bar() { 
+        console.log(foo); // what is the value of foo ? undefined
+        var foo = "baz"; // ever heard of foo ? ok, assign it the "baz" value
+        console.log(foo); // what is the value of foo ? "baz"
+    }
+    
+    function baz(foo) {
+        foo = "bam"; // know foo ? yes, assign it the "bam" value 
+        bam = "yay"; // know bam ? no, go up one level to find out, creates it on the global in non-strict mode
+    }
     
 #### Closures
 
