@@ -1,37 +1,4 @@
-# Notes/JavaScript
-> examples mostly from Douglas Crockford's "JavaScript: The Good Parts"
-
-### !!! - Faulty expression statement
-
-    return
-    
-    {
-        ok: true
-    };
-
-Because of automatic semicolons insertion, above code is equivalent to an expression statement :
-
-    return;
-    
-    { 
-        ok:true 
-    };
-
-Always write
-
-    return {
-        ok: true 
-    };
-
-### Type coercion of `==`
-
-`==` does weird type coercion like
-
-    '' == '0'           // false
-    false == 'false'    // false
-    " \t\r\n " == 0     // true
-    
-Always use `===`
+# JavaScript
 
 ### Number
 
@@ -41,9 +8,13 @@ Always use the radix for parseInt function:
 
 Since some environment may interpret `"012"` as octal number.
 
+___
+
 ### String 
 
 Strings in js are composed of 16-bit character.
+
+___
 
 ### Statements
 
@@ -59,11 +30,56 @@ For looping through Array or Objects, instead of using `for` or `for in` loops, 
     
 The main difference between `Object.keys` and `for in` is the former will only loop through *own* *enumerable* properties of the passed object. 
 
+___
+
+### Scope and Closures
+
+#### Scope
+
+_Where to look for things_
+    
+#### Closures
+
+##### Singleton pattern returns one instance of an object containing 2 public methods:
+
+    var singleton = (function () {
+        var privateVariable;
+        function privateFunction(x) {
+            // private variable stuff
+        }
+        return {
+            firstMethod: function(a, b) {
+                // private variable
+            },
+            secondMethod: function(x) {
+                // private function...
+            }
+        };
+    }())
+
+This immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.
+
+##### Constructor pattern
+
+    function constructor(spec) {
+        var privateValue;
+        // here we can call another constructor to inherit from
+        var service = otherConstructor(spec),
+            instance,
+            method = function() {
+                // spec, instance, method, privateValue
+            };
+        service.method = method;
+        return service;
+    }
+
+The returned object have access to private *(close over...)* variables or private methods. Returned functions are pushed on the memory heap and *because of closure* the inner variables and methods that were linked to returned functions in the constructor *won't* get garbage collected. They will live as long as the returned object lives.
+
+___
+
 ### Functions
 
 #### `this` and `arguments`
-
-___
 
 In a function, `arguments` contains a pseudo array (only has a few methods) which contains all arguments that were passed in:
 
@@ -106,46 +122,6 @@ An example of lexical `this` with the `Function.Prototype.bind()` method
     console.log(service.helloUndefined()); // underfined
     console.log(service.hello()); // 'hello'
     console.log(service.helloWithBind()); // 'world'
-    
-#### Examples of Function Closures
-
-___
-
-
-##### Singleton pattern returns one instance of an object containing 2 public methods:
-
-    var singleton = (function () {
-        var privateVariable;
-        function privateFunction(x) {
-            // private variable stuff
-        }
-        return {
-            firstMethod: function(a, b) {
-                // private variable
-            },
-            secondMethod: function(x) {
-                // private function...
-            }
-        };
-    }())
-
-This immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.
-
-##### Constructor pattern:
-
-    function constructor(spec) {
-        var privateValue;
-        // here we can call another constructor to inherit from
-        var service = otherConstructor(spec),
-            instance,
-            method = function() {
-                // spec, instance, method, privateValue
-            };
-        service.method = method;
-        return service;
-    }
-
-The returned object have access to private *(close over...)* variables or private methods. Returned functions are pushed on the memory heap and *because of closure* the inner variables and methods that were linked to returned functions in the constructor *won't* get garbage collected. They will live as long as the returned object lives.
 
 ___
 
@@ -172,3 +148,41 @@ ___
     honda1.age = 14;
     honda1.grow();
     console.log(honda1.age); // 15;
+
+___
+
+### !!! - Faulty expression statement
+
+    return
+    
+    {
+        ok: true
+    };
+
+Because of automatic semicolons insertion, above code is equivalent to an expression statement :
+
+    return;
+    
+    { 
+        ok:true 
+    };
+
+Always write
+
+    return {
+        ok: true 
+    };
+
+___
+
+### Type coercion of `==`
+
+`==` does weird type coercion like
+
+    '' == '0'           // false
+    false == 'false'    // false
+    " \t\r\n " == 0     // true
+    
+Always use `===`
+
+___
