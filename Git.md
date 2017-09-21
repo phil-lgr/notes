@@ -67,6 +67,7 @@ git log --decorate
 # display git branches as graphs
 git log --graph
 git log --graph --all --decorate --stat --date=iso
+git log --graph --all --date=iso
 
 # display details and code changes of each commit
 git log -p
@@ -151,4 +152,6 @@ git config --global alias.a 'commit --all'
 git config --global alias.p 'push'
 git config --global alias.s 'status'
 git config --global alias.up 'pull upstream master'
+git config --global alias.tree-stat 'log --graph --all --decorate --stat --date=iso'
+git config --global alias.tree 'log --graph --all --decorate=short --date=iso --oneline'
 ```
