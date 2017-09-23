@@ -66,8 +66,13 @@ git log --decorate
 
 # display git branches as graphs
 git log --graph
+
+# prettier graph
 git log --graph --all --decorate --stat --date=iso
 git log --graph --all --date=iso
+
+# tree graph with no commit info
+git log --graph --all --date=iso --pretty=oneline --abbrev-commit
 
 # display details and code changes of each commit
 git log -p
