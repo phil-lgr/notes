@@ -38,6 +38,9 @@ git checkout -
 # merge current branch with branch-name
 git merge branch-name
 
+# merge only one particular commit
+git cherry-pick <commit-hash>
+
 # delete branch-name
 git branch -d branch-name
 
