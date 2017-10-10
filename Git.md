@@ -38,6 +38,9 @@ git checkout -
 # merge current branch with branch-name
 git merge branch-name
 
+# merge only one particular commit
+git cherry-pick <commit-hash>
+
 # delete branch-name
 git branch -d branch-name
 
@@ -152,7 +155,9 @@ git update-index --assume-unchanged ./path/to/file
 # create alias
 git config --global alias.unstage 'reset HEAD --'
 
-# common aliases
+# aliases
+git config --global alias.c 'commit'
+git config --global alias.ck 'checkout'
 git config --global alias.a 'commit --all'
 git config --global alias.p 'push'
 git config --global alias.s 'status'
