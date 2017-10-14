@@ -20,6 +20,15 @@ git merge
 # fetch and merge changes on the current branch
 git pull
 
+# fetch all branches from the remote and set tracking
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+
+# fetch all branches (once they are checked out locally)
+git fetch --all
+
+# update local branches with remote
+git pull --all
+
 # list branches
 git branch
 
