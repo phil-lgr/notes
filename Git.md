@@ -11,6 +11,10 @@ git status
 # commit all tracked files
 git commit
 
+# git add with patch, only add specific changes
+git add --patch
+--> y to stage, q to quit, n to skip
+
 # get latest changes without merging
 git fetch
 
