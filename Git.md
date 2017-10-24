@@ -64,9 +64,8 @@ git stash
 git stash apply
 
 # check which changes you are about to pull
-git checkout feature/fonts
-git fetch
-git log --oneline --no-merges ..origin/feature/fonts
+git fetch origin develop
+git diff <current branch> origin/develop
 
 # display last commits, navigate like in vim
 git log
@@ -177,4 +176,7 @@ git config --global alias.s 'status'
 git config --global alias.up 'pull upstream master'
 git config --global alias.tree-stat 'log --graph --all --decorate --stat --date=iso'
 git config --global alias.tree 'log --graph --all --decorate=short --date=iso --oneline'
+
+# default config
+git config --global branch.autosetuprebase always
 ```
