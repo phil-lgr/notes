@@ -39,4 +39,8 @@ npm run task -s
 
 # ntl package list all the npm script with interactive commands
 ntl
+
+# prefer offline (avoid checking the repository for changed in cached version)
+npm config -g set prefer-offline true
+
 ```
