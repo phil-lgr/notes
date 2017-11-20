@@ -152,10 +152,22 @@ An example of lexical `this` with the `Function.Prototype.bind()` method
     console.log(service.helloUndefined()); // underfined
     console.log(service.hello()); // 'hello'
     console.log(service.helloWithBind()); // 'world'
+   
 
+#### `new` keyword aka constructor call
+
+    function bar() {
+        console.log('bar');
+    }
+    var foo = new bar(); // four things happen:
+    // 1. brand new object is created
+    // 2. newly created object is linked to another object
+    // 3. newly created object is passed as `this` in the function call
+    // 4. return this (the object)
+    
 ___
 
-### Inheritance (ES5)
+### Prototypes & Inheritance (ES5)
 
 #### Class and Subclass with Object.create()
 
@@ -178,6 +190,52 @@ ___
     honda1.age = 14;
     honda1.grow();
     console.log(honda1.age); // 15;
+    
+#### Constructor
+
+A constructor makes an object linked to its own prototype.
+
+#### Example of Protoype with Shadowing (skipping proto chain)
+
+![image](https://user-images.githubusercontent.com/9644867/33003876-88df8de0-cd8b-11e7-8e0f-2ec78945c40e.png)
+
+    // create function Foo with a prop called .prototype
+    // the prototype's constructor is the function Foo
+    // there is also a relationship between Foo's proto and Object.prototype
+    function Foo(who) {
+        this.me = who;
+    }
+    Foo.prototype.identify = function() {
+        return "I am " + this.me;
+    }
+
+    // create a new object
+    // link new object to Foo's proto
+    // pass the object as this in Foo
+    // return the object (same for a2)
+    var a1 = new Foo("a1");
+    var a2 = new Foo("a2");
+
+    // assignment to the a2 object (not through the prototype chain)
+    a2.speak = function() {
+        alert("Hello, " + this.identify() + ".");
+    }
+
+    // a1 doesn't have a proto, but higher in the chain,
+    // Foo.prototype is the first one up
+    a1.constructor === Foo;
+    a1.constructor === a2.constructor;
+
+    a1.__proto__ === Foo.constructor; // access __proto__ goes to Foo.prototype
+    Object.getPrototypeOf(a1); // IE 6-11 __proto__ is not available
+    a1.__proto__ === a2.__proto__;
+
+    // shadowing
+    a1.identify = function() {
+        Foo.prototype.identify.call(this); // <-- skip the prototype chain and call the 
+        // prototype directly
+    }
+
 
 ___
 
