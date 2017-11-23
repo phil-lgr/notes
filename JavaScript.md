@@ -238,6 +238,8 @@ A constructor makes an object linked to its own prototype.
 
 #### Object Linked To Object Example (OLOO)
 
+![image](https://user-images.githubusercontent.com/9644867/33156910-3447f82e-cfcc-11e7-9bd8-3405ed354725.png)
+
     var Foo = {
         init: function (who) {
             this.me = who;
