@@ -161,9 +161,25 @@ An example of lexical `this` with the `Function.Prototype.bind()` method
     }
     var foo = new bar(); // four things happen:
     // 1. brand new object is created
-    // 2. newly created object is linked to another object
+    // 2. newly created object is linked to another object (bar)
     // 3. newly created object is passed as `this` in the function call
     // 4. return this (the object)
+    
+Another example with `Date()`
+
+    var date = Date()
+    undefined
+    var dateObject = new Date()
+    undefined
+    date.constructor
+    ƒ String() { [native code] }
+    dateObject.constructor
+    ƒ Date() { [native code] }
+    date.__proto__
+    String {[[PrimitiveValue]]: "", length: 0, constructor: ƒ, charAt: ƒ, charCodeAt: ƒ, codePointAt: ƒ, …} // has Date as proto
+    dateObject.__proto__
+    {constructor: ƒ, toString: ƒ, toDateString: ƒ, toTimeString: ƒ, toISOString: ƒ, …} has String as proto
+    
     
 ___
 
