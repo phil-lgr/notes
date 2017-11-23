@@ -236,7 +236,41 @@ A constructor makes an object linked to its own prototype.
         // prototype directly
     }
 
+#### Object Linked To Object Example (OLOO)
 
+    var Foo = {
+        init: function (who) {
+            this.me = who;
+        },
+        identify: function() {
+            return "I am " + this.me;
+        }
+    };
+
+    var Bar = Object.create(Foo);
+
+    Bar.speak = function() {
+        alert("hello, " + this.identify());
+    };
+
+    var b1 = Object.create(Bar);
+    b1.init("b1");
+    b1.speak(); // alerts: "hello, I am b1";
+    
+___
+
+### Types
+
+Native types: `number`, `boolean`, `object`, `undefined`, `string`
+
+`function` is not a primitive type since it's based on object, but is callable.
+
+#### NaN
+
+    "a" / 2         // gives NaN
+    isNaN()         // built-in method to check for NaN value (convert to number first)
+    Number.isNaN()  // more robust method
+    
 ___
 
 ### !!! - Faulty expression statement
