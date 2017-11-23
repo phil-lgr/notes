@@ -288,7 +288,23 @@ Native types: `number`, `boolean`, `object`, `undefined`, `string`
     "a" / 2         // gives NaN
     isNaN()         // built-in method to check for NaN value (convert to number first)
     Number.isNaN()  // more robust method
-    
+
+___
+
+### Coercion
+
+#### Tilde operator ~
+
+    var foo = "foo";
+
+    // -1 did not find it
+    if (~foo.indexOf("f")) {
+        alert("Found it!");
+    }
+
+Bitwise negate (adding one to it and negating).
+
+ES6 includes String.prototype.includes()
 ___
 
 ### !!! - Faulty expression statement
