@@ -12,7 +12,7 @@ ___
 
 ### String 
 
-Strings in js are composed of 16-bit character.
+Strings in JavaScript are composed of 16-bit character.
 
 ___
 
@@ -89,7 +89,7 @@ On the second pass (execution):
 
 This immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.
 
-##### Constructor pattern
+##### Factory/Constructor pattern
 
     function constructor(spec) {
         var privateValue;
@@ -152,34 +152,6 @@ An example of lexical `this` with the `Function.Prototype.bind()` method
     console.log(service.helloUndefined()); // underfined
     console.log(service.hello()); // 'hello'
     console.log(service.helloWithBind()); // 'world'
-   
-
-#### `new` keyword aka constructor call
-
-    function bar() {
-        console.log('bar');
-    }
-    var foo = new bar(); // four things happen:
-    // 1. brand new object is created
-    // 2. newly created object is linked to another object (bar)
-    // 3. newly created object is passed as `this` in the function call
-    // 4. return this (the object)
-    
-Another example with `Date()`
-
-    var date = Date()
-    undefined
-    var dateObject = new Date()
-    undefined
-    date.constructor
-    ƒ String() { [native code] }
-    dateObject.constructor
-    ƒ Date() { [native code] }
-    date.__proto__
-    String {[[PrimitiveValue]]: "", length: 0, constructor: ƒ, charAt: ƒ, charCodeAt: ƒ, codePointAt: ƒ, …} // has Date as proto
-    dateObject.__proto__
-    {constructor: ƒ, toString: ƒ, toDateString: ƒ, toTimeString: ƒ, toISOString: ƒ, …} has String as proto
-    
     
 ___
 
@@ -210,6 +182,39 @@ ___
 #### Constructor
 
 A constructor makes an object linked to its own prototype.
+
+#### `new` keyword aka constructor call
+
+    function bar() {
+        console.log('bar');
+    }
+    var foo = new bar(); // four things happen:
+    // 1. brand new object is created
+    // 2. newly created object is linked to another object (bar)
+    // 3. newly created object is passed as `this` in the function call
+    // 4. return this (the object)
+    
+Another example with `Date()`
+
+    var date = Date()
+    undefined
+    
+    var dateObject = new Date()
+    undefined
+    
+    date.constructor
+    ƒ String() { [native code] }
+    
+    dateObject.constructor
+    ƒ Date() { [native code] }
+    
+    date.__proto__
+    // has String as proto
+    String {[[PrimitiveValue]]: "", length: 0, constructor: ƒ, charAt: ƒ, charCodeAt: ƒ, codePointAt: ƒ, …} 
+    
+    dateObject.__proto__
+    // has Date as proto
+    {constructor: ƒ, toString: ƒ, toDateString: ƒ, toTimeString: ƒ, toISOString: ƒ, …} 
 
 #### Example of Protoype with Shadowing (skipping proto chain)
 
@@ -252,7 +257,7 @@ A constructor makes an object linked to its own prototype.
         // prototype directly
     }
 
-#### Object Linked To Object Example (OLOO)
+#### Object Linked To Other Object Example (OLOO)
 
 ![image](https://user-images.githubusercontent.com/9644867/33156910-3447f82e-cfcc-11e7-9bd8-3405ed354725.png)
 
@@ -283,7 +288,7 @@ Native types: `number`, `boolean`, `object`, `undefined`, `string`
 
 `function` is not a primitive type since it's based on object, but is callable.
 
-#### NaN
+#### NaN Value
 
     "a" / 2         // gives NaN
     isNaN()         // built-in method to check for NaN value (convert to number first)
@@ -304,10 +309,19 @@ ___
 
 Bitwise negate (adding one to it and negating).
 
-ES6 includes String.prototype.includes()
+#### Type coercion of `==`
+
+`==` does weird type coercion like
+
+    '' == '0'           // false
+    false == 'false'    // false
+    " \t\r\n " == 0     // true
+    
+Always use `===`
+
 ___
 
-### !!! - Faulty expression statement
+### Faulty expression statement
 
     return
     
@@ -328,17 +342,5 @@ Always write
     return {
         ok: true 
     };
-
-___
-
-### Type coercion of `==`
-
-`==` does weird type coercion like
-
-    '' == '0'           // false
-    false == 'false'    // false
-    " \t\r\n " == 0     // true
-    
-Always use `===`
 
 ___
