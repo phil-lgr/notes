@@ -24,8 +24,6 @@ npm-shrinkwrap.json
 # application
 dist/
 sw/dist
-/doc/
-/docs
 vendor/dll/
 
 /sw/dist/

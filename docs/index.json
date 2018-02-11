@@ -1,0 +1,859 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/javascript/js.js",
+    "content": "export function add(a, b) {\n    return a + b;\n}\n\nexport function sub(a, b) {\n    return a - b;\n}\n\nexport function mul(a, b) {\n    return a * b;\n}\n",
+    "static": true,
+    "longname": "C:/Users/pleger/Code/notes/src/javascript/js.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "add",
+    "memberof": "src/javascript/js.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/javascript/js.js~add",
+    "access": "public",
+    "export": true,
+    "importPath": "notes/src/javascript/js.js",
+    "importStyle": "{add}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "sub",
+    "memberof": "src/javascript/js.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/javascript/js.js~sub",
+    "access": "public",
+    "export": true,
+    "importPath": "notes/src/javascript/js.js",
+    "importStyle": "{sub}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "mul",
+    "memberof": "src/javascript/js.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/javascript/js.js~mul",
+    "access": "public",
+    "export": true,
+    "importPath": "notes/src/javascript/js.js",
+    "importStyle": "{mul}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/TypeScript/js.js",
+    "content": "export function add(a, b) {\n    return a + b;\n}\n\nexport function sub(a, b) {\n    return a - b;\n}\n\nexport function mul(a, b) {\n    return a * b;\n}\n",
+    "static": true,
+    "longname": "C:/Users/pleger/Code/notes/src/TypeScript/js.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "add",
+    "memberof": "src/TypeScript/js.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/TypeScript/js.js~add",
+    "access": "public",
+    "export": true,
+    "importPath": "notes/src/TypeScript/js.js",
+    "importStyle": "{add}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "sub",
+    "memberof": "src/TypeScript/js.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/TypeScript/js.js~sub",
+    "access": "public",
+    "export": true,
+    "importPath": "notes/src/TypeScript/js.js",
+    "importStyle": "{sub}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "mul",
+    "memberof": "src/TypeScript/js.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/TypeScript/js.js~mul",
+    "access": "public",
+    "export": true,
+    "importPath": "notes/src/TypeScript/js.js",
+    "importStyle": "{mul}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# Notes\n",
+    "longname": "C:\\Users\\pleger\\Code\\notes\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"notes\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Personal notes\",\n  \"main\": \"index.js\",\n  \"config\": {\n    \"ports\": {\n      \"dev\": 8000,\n      \"prod\": 8002\n    }\n  },\n  \"scripts\": {\n    \"start\": \"              echo 'Generating doc...' &               npm-run-all esdoc -p serve watch\",\n    \"serve\": \"              echo 'Serving docs...' &                 npm-run-all \\\"http-server -- docs\\\"\",\n    \"esdoc\": \"                                                       esdoc\",\n    \"watch\": \"                                                       onchange \\\".esdoc.json\\\" \\\"src/**/*.md\\\" \\\"src/**/*.js\\\" -e \\\"src/.external-ecmascript.js\\\" -- npm run esdoc\",\n    \"prestart\": \"                                                    npm-run-all clear\",\n    \"http-server\": \"                                                 cross-var http-server -s -g -a localhost -c-1 -p $npm_package_config_ports_prod\",\n    \"clear\": \"                                                       node -p \\\"require('./node_modules/console-clear/index.js')(); (function(){return ''})()\\\"\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/phil-lgr/notes.git\"\n  },\n  \"keywords\": [\n    \"javascript\",\n    \"git\",\n    \"npm\",\n    \"node\",\n    \"web\",\n    \"dom\"\n  ],\n  \"author\": \"phil-lgr\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/phil-lgr/notes/issues\"\n  },\n  \"homepage\": \"https://github.com/phil-lgr/notes#readme\",\n  \"devDependencies\": {\n    \"console-clear\": \"1.1.0\",\n    \"cross-env\": \"5.1.3\",\n    \"cross-var\": \"1.1.0\",\n    \"esdoc\": \"1.0.4\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"http-server\": \"0.11.1\",\n    \"npm-run-all\": \"4.1.2\",\n    \"onchange\": \"3.3.0\"\n  }\n}\n",
+    "longname": "C:\\Users\\pleger\\Code\\notes\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "content": "# Title\n\n\n",
+    "longname": "C:\\Users\\pleger\\Code\\notes\\src\\index.md",
+    "name": "./src/index.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualAsset",
+    "longname": "C:\\Users\\pleger\\Code\\notes\\assets",
+    "name": "./assets",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "C:\\Users\\pleger\\Code\\notes\\src\\javascript\\ES5.md",
+    "name": "./src/javascript/ES5.md",
+    "content": "# JavaScript\n\n### Number\n\nAlways use the radix for parseInt function:\n\n    parseInt(\"12cows\", 10);\n\nSince some environment may interpret `\"012\"` as octal number.\n\n___\n\n### String \n\nStrings in JavaScript are composed of 16-bit character.\n\n___\n\n### Statements\n\nFor looping through Array or Objects, instead of using `for` or `for in` loops, one can use `Object.keys()` and `Array.prototype.every()`. The latter can take a callback function which must return a truthy value otherwhise every() stops.\n`Object.keys(obj)` returns an array of the own enumerable properties of the passed object.\n\n    Object.keys(obj)\n        .every(function(element, index, array) {\n            (obj[element]); // return the object property \"element\"\n            (array[index]);\n        return true;\n    });\n    \nThe main difference between `Object.keys` and `for in` is the former will only loop through *own* *enumerable* properties of the passed object. \n\n___\n\n### Scope and Closures\n\n#### Scope\n\n_Where to look for things_\n\nExample of how the JS engine parses variable and function declaration on the first pass (compilation):\n\n    var foo = \"bar\"; // does foo exist in the scope ? let's create it.\n    \n    function bar() { // does bar exist in the scope ? let's create it.\n        console.log(foo); // not a declaration\n        var foo = \"baz\"; // another LHS (left handed assignment)\n        console.log(foo); // not a declaration\n    }\n    \n    function baz(foo /* foo is created as formal variable inside (declaration) of baz */) { // create baz \n        foo = \"bam\"; // not a declaration\n        bam = \"yay\"; // can't imply anything about bam\n    }\n    \nOn the second pass (execution):\n\n    var foo = \"bar\"; // does foo exist ? ok, assign it the \"bar\" value.\n    \n    function bar() { \n        console.log(foo); // what is the value of foo ? undefined\n        var foo = \"baz\"; // ever heard of foo ? ok, assign it the \"baz\" value\n        console.log(foo); // what is the value of foo ? \"baz\"\n    }\n    \n    function baz(foo) {\n        foo = \"bam\"; // know foo ? yes, assign it the \"bam\" value \n        bam = \"yay\"; // know bam ? no, go up one level to find out, creates it on the global in non-strict mode\n    }\n    \n#### Closures\n\n##### Singleton pattern returns one instance of an object containing 2 public methods:\n\n    var singleton = (function () {\n        var privateVariable;\n        function privateFunction(x) {\n            // private variable stuff\n        }\n        return {\n            firstMethod: function(a, b) {\n                // private variable\n            },\n            secondMethod: function(x) {\n                // private function...\n            }\n        };\n    }())\n\nThis immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.\n\n##### Factory/Constructor pattern\n\n    function constructor(spec) {\n        var privateValue;\n        // here we can call another constructor to inherit from\n        var service = otherConstructor(spec),\n            instance,\n            method = function() {\n                // spec, instance, method, privateValue\n            };\n        service.method = method;\n        return service;\n    }\n\nThe returned object have access to private *(close over...)* variables or private methods. Returned functions are pushed on the memory heap and *because of closure* the inner variables and methods that were linked to returned functions in the constructor *won't* get garbage collected. They will live as long as the returned object lives.\n\n___\n\n### Functions\n\n#### `this` and `arguments`\n\nIn a function, `arguments` contains a pseudo array (only has a few methods) which contains all arguments that were passed in:\n\n    function sum() {\n        var total = 0, i, len = arguments.length;\n        for(i = 0; i < len; i++) {\n            total += Number(arguments[i]);\n        }\n        return total;\n    }\n    \n`this` parameter contains a reference to the object of invocation. It allows a method to know what object it is concerned with.\n\n    function() {\n        (this); // if called in the global scope for example, this is the window object\n    }\n    \nAn example of lexical `this` with the `Function.Prototype.bind()` method\n    \n    function mod(){\n        this.text = 'world';\n        function helloUndefined() {\n            return this.text;\n        }\n        function hello(){\n          this.text = 'hello'\n          return this.text;\n        }\n        function helloWithBind(){\n            return this.text;\n        }\n        return {\n            helloUndefined: helloUndefined,\n            hello: hello,\n            helloWithBind: helloWithBind.bind(this)\n            }\n    }\n    \n    var service = mod();\n    console.log(service.helloUndefined()); // underfined\n    console.log(service.hello()); // 'hello'\n    console.log(service.helloWithBind()); // 'world'\n    \n___\n\n### Prototypes & Inheritance (ES5)\n\n#### Class and Subclass with Object.create()\n\n    function Car() {\n        this.age = 12;\n        this.grow = function grow() {\n            this.age += 1;\n        }\n    }\n    \n    function Honda() {\n        Car.call(this); // to inherit props\n        this.age = 14;\n    }\n    \n    Honda.prototype = Object.create(Car.prototype); // sets proto, but overrides the constructor;\n    Honda.prototype.constructor = Honda; // this is probably what we want\n    \n    var honda1 = new Honda();\n    honda1.age = 14;\n    honda1.grow();\n    console.log(honda1.age); // 15;\n    \n#### Constructor\n\nA constructor makes an object linked to its own prototype.\n\n#### `new` keyword aka constructor call\n\n    function bar() {\n        console.log('bar');\n    }\n    var foo = new bar(); // four things happen:\n    // 1. brand new object is created\n    // 2. newly created object is linked to another object (bar)\n    // 3. newly created object is passed as `this` in the function call\n    // 4. return this (the object)\n    \nAnother example with `Date()`\n\n    var date = Date()\n    undefined\n    \n    var dateObject = new Date()\n    undefined\n    \n    date.constructor\n    ƒ String() { [native code] }\n    \n    dateObject.constructor\n    ƒ Date() { [native code] }\n    \n    date.__proto__\n    // has String as proto\n    String {[[PrimitiveValue]]: \"\", length: 0, constructor: ƒ, charAt: ƒ, charCodeAt: ƒ, codePointAt: ƒ, …} \n    \n    dateObject.__proto__\n    // has Date as proto\n    {constructor: ƒ, toString: ƒ, toDateString: ƒ, toTimeString: ƒ, toISOString: ƒ, …} \n\n#### Example of Protoype with Shadowing (skipping proto chain)\n\n![image](https://user-images.githubusercontent.com/9644867/33003876-88df8de0-cd8b-11e7-8e0f-2ec78945c40e.png)\n\n    // create function Foo with a prop called .prototype\n    // the prototype's constructor is the function Foo\n    // there is also a relationship between Foo's proto and Object.prototype\n    function Foo(who) {\n        this.me = who;\n    }\n    Foo.prototype.identify = function() {\n        return \"I am \" + this.me;\n    }\n\n    // create a new object\n    // link new object to Foo's proto\n    // pass the object as this in Foo\n    // return the object (same for a2)\n    var a1 = new Foo(\"a1\");\n    var a2 = new Foo(\"a2\");\n\n    // assignment to the a2 object (not through the prototype chain)\n    a2.speak = function() {\n        alert(\"Hello, \" + this.identify() + \".\");\n    }\n\n    // a1 doesn't have a proto, but higher in the chain,\n    // Foo.prototype is the first one up\n    a1.constructor === Foo;\n    a1.constructor === a2.constructor;\n\n    a1.__proto__ === Foo.constructor; // access __proto__ goes to Foo.prototype\n    Object.getPrototypeOf(a1); // IE 6-11 __proto__ is not available\n    a1.__proto__ === a2.__proto__;\n\n    // shadowing\n    a1.identify = function() {\n        Foo.prototype.identify.call(this); // <-- skip the prototype chain and call the \n        // prototype directly\n    }\n\n#### Object Linked To Other Object Example (OLOO)\n\n![image](https://user-images.githubusercontent.com/9644867/33156910-3447f82e-cfcc-11e7-9bd8-3405ed354725.png)\n\n    var Foo = {\n        init: function (who) {\n            this.me = who;\n        },\n        identify: function() {\n            return \"I am \" + this.me;\n        }\n    };\n\n    var Bar = Object.create(Foo);\n\n    Bar.speak = function() {\n        alert(\"hello, \" + this.identify());\n    };\n\n    var b1 = Object.create(Bar);\n    b1.init(\"b1\");\n    b1.speak(); // alerts: \"hello, I am b1\";\n    \n___\n\n### Types\n\nNative types: `number`, `boolean`, `object`, `undefined`, `string`\n\n`function` is not a primitive type since it's based on object, but is callable.\n\n#### NaN Value\n\n    \"a\" / 2         // gives NaN\n    isNaN()         // built-in method to check for NaN value (convert to number first)\n    Number.isNaN()  // more robust method\n\n___\n\n### Coercion\n\n#### Tilde operator ~\n\n    var foo = \"foo\";\n\n    // -1 did not find it\n    if (~foo.indexOf(\"f\")) {\n        alert(\"Found it!\");\n    }\n\nBitwise negate (adding one to it and negating).\n\n#### Type coercion of `==`\n\n`==` does weird type coercion like\n\n    '' == '0'           // false\n    false == 'false'    // false\n    \" \\t\\r\\n \" == 0     // true\n    \nAlways use `===`\n\n___\n\n### Faulty expression statement\n\n    return\n    \n    {\n        ok: true\n    };\n\nBecause of automatic semicolons insertion, above code is equivalent to an expression statement :\n\n    return;\n    \n    { \n        ok:true \n    };\n\nAlways write\n\n    return {\n        ok: true \n    };\n\n___\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "C:\\Users\\pleger\\Code\\notes\\src\\javascript\\ES6.md",
+    "name": "./src/javascript/ES6.md",
+    "content": "# JavaScript (ES6)\n\n### Number\n\nAlways use the radix for parseInt function:\n\n    parseInt(\"12cows\", 10);\n\nSince some environment may interpret `\"012\"` as octal number.\n\n___\n\n### String \n\nStrings in js are composed of 16-bit character.\n\n\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "C:\\Users\\pleger\\Code\\notes\\src\\javascript\\fp.md",
+    "name": "./src/javascript/fp.md",
+    "content": "# Examples of Functional Programming Constructs in JavaScript\n\n##### Some simple unary functions:\n\n    function add(a, b) {\n      return a + b;\n    }\n    \n    function sub(a, b) {\n      return a - b;\n    }\n    \n    function mul(a, b) {\n      return a * b;\n    }\n\n##### A function that returns a function that returns the argument:\n\n    function identityf(number) {\n      return function() {\n        return number;\n      }\n    }\n\n##### A function that adds from two invocations:\n\n    function addf(outer) {\n      return function(inner) {\n        return outer + inner;\n      }\n    }\n    addf(3)(4);\n    \n##### A function that takes a binary function and makes it callable with two invocations\n\n*currying*: decomposing multiple arguments functions into multiple functions that takes a single argument\n\n    function liftf(bin) {\n      return function(first) {\n        return function(second) {\n          return bin(first, second);\n        }\n      }\n    }\n    var addf = liftf(add);\n    addf(3)(4);\n    liftf(mul)(5)(6);\n    \n##### A function that takes a binary function and an argument and can pass another argument\n\n    function curry(bin, first) {\n      return liftf(bin)(first);\n    }\n\n    var add3 = curry(add, 3);\n    add3(4)\n    curry(mul, 5)(6);\n\n*In ES6* we can use the spread operator:\n\n    function curryES6(func, ...first) {\n    // ellipsis ... takes all the args put them in an array and bind array to parameters\n      return function(...second) {\n        return func(...first, ...second);\n      }\n    }\n    \n##### Functions that add 1 to arguments:\n\n    var inc = liftf(add)(1);\n    var inc2 = curry(add, 1);\n    var inc3 = addf(1);\n    inc3(5);\n    inc3(inc(5));\n    \n##### A function that takes a binary function that returns a unary function that passes its argument twice in the binary function:\n    \n    function twice(bin) {\n      return function(number) {\n        return bin(number, number);\n      }\n    }\n    var doubl = twice(add);\n    var square = twice(mul);\n    doubl(11); \n    square(11);\n\n##### A function that reverse the order of the arguments of a binary function:\n\n    function reverse(bin) {\n      return function(...args) {\n        return bin(...args.reverse());\n      }\n    }\n\n    var bus = reverse(sub);\n    bus(3,2);\n    \n##### A function that takes two unary functions that returns a unary function that calls them both:\n\n    function composeu(unary1, unary2) {\n      return function(number) {\n        return unary2(unary1(number));\n      }\n    }\n    \n    composeu(doubl, square)(5); // 100\n    \n##### A function that takes two binary functions that returns a function that calls them both:\n\n    function composeb(bin1, bin2) {\n      return function(a, b, c) {\n        return bin2(bin1(a, b), c);\n      }\n    }\n    \n    composeb(add, mul)(2, 3, 7); // 35\n    \n##### A function that limits the number of times a binary function can be invoked:\n\n    function limit(bin, limitN) {\n      var counter = limitN || 1;\n      return function(a, b) {\n        if(counter) {\n          counter -= 1;\n          return bin(a, b);\n        } else {\n          return undefined;\n        }\n      }\n    }\n    \n    var add_limited = limit(add, 2);\n    add_limited(1, 2); // 3\n    add_limited(1, 2); // 3\n    add_limited(1, 2); // undefined\n    \n##### A generator function that produces a series of values:\n\n    function from(number) {\n      return function() {\n        return number++; // function closes over the outer function parameter\n      }\n    }\n    \n    var index = from(0);\n    index(); // 0\n    index(); // 1\n    \n##### A function that takes a generator and a end value that produces value up to that end value:\n\n    function to(gen, end) {\n      return function() {\n        var value = gen();\n        if (value < end) {\n          return value;\n        }\n      }\n    }\n    \n    var index = to(from(1), 3);\n    index(); // 1\n    index(); // 2\n    index(); // undefined\n    \n##### A function that takes a start and end value and produces a generator that will produce values in a range:\n\n    function fromTo(begin, end) {\n      return to(from(begin), end);\n    }\n    \n    var index = fromTo(0, 3);\n    index(); // 0\n    index(); // 1\n    index(); // 2\n    index(); // undefined\n    \n##### A function that takes an array and a generator that returns a generator that will produce elements from the array:\n\n    function element(array, fromToGen) {\n      return function() {\n        var index = fromToGen();\n        if (index !== undefined) { // protects the function from the array containing the value *undefined*\n          return array[index];\n        }\n      }\n    }\n    \n    var ele = element(['a', 'b', 'c', 'd'], fromTo(1, 3));\n    ele(); // b\n    ele(); // c\n    ele(); // undefined\n    \nWith the generator optional:\n\n    function element(array, fromToGen) {\n      return function() {\n        var value;\n        // making the generator optional\n        // if (fromToGen === undefined) {\n        //   fromToGen = fromTo(0, array.length);\n        // }\n        // better, since we check if the passed argument is explicitely a function\n        if (typeof(fromToGen) !== \"function\") {\n          fromToGen = fromTo(0, array.length);\n        }\n        value = array[fromToGen()];\n    \n        if (value !== undefined) {\n          return value;\n        }\n      }\n    }\n    \n    var ele = element(['a', 'b', 'c', 'd']);\n    ele(); // b\n    ele(); // c\n    \n##### A function that takes a generator and an array and will produces a function that collects the result in the array:\n\n    function collect(gen, array){\n      return function(){\n        var value;\n        if(typeof(gen) !== \"function\"){\n          throw \"gen must be a generator\";\n        } else {\n          value = gen();\n          if(value !== undefined){\n            array.push(value);\n          }\n          return value;\n        }\n      }\n    }\n    \n    var array = [];\n    var col = collect(fromTo(0, 2), array);\n    col(); // 0\n    col(); // 1\n    col(); // undefined\n    array; // [0, 1]\n    \n##### A filter function that takes a generation and a predicate (function that returns bool) and produces a generator that produces only the values approuved by the predicate:\n\n    function filter(gen, predicate) {\n      return function() {\n        var value = gen();\n        while (value !== undefined) {\n          if (predicate(value)) {\n            return value;\n          }\n          value = gen();\n        }\n      }\n    }\n    \n    var fil = filter(fromTo(0, 5),\n      function third(value) {\n        return (value % 3) === 0;\n      });\n    \n    fil(); // 0\n    fil(); // 3\n    fil(); // undefined\n    \n##### A concat function that takes two generators and produce a generator that put them in sequence:\n\n    function concat(gen1, gen2) {\n      return function() {\n        var value;\n    \n        value = gen1();\n    \n        if (value !== undefined) {\n          return value;\n        }\n    \n        value = gen2();\n    \n        if (value !== undefined) {\n          return value;\n        }\n    \n      }\n    }\n    \n    var con = concat(fromTo(0, 3), fromTo(0, 2));\n    con(); // 0\n    con(); // 1\n    con(); // 2\n    con(); // 0\n    con(); // 1 \n    con(); // undefined\n\n##### A function that makes a function that takes a character string and generates unique symbols:\n\n    function gensymf(char){\n      var index = 1;\n      return function(){\n        return char+index++;\n      }\n    }\n    \n    var geng = gensymf(\"G\"), genh = gensymf(\"H\");\n    \n    geng(); // G1\n    geng(); // G2\n    genh(); // H1\n    genh(); // H2\n",
+    "static": true,
+    "access": "public"
+  }
+]

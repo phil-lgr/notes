@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | notes</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Personal notes"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="notes"><meta property="twitter:description" content="Personal notes"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/phil-lgr/notes"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/ES5.html"><a href="manual/ES5.html" data-ice="link">JavaScript</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#number" data-ice="link">Number</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#string" data-ice="link">String</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#statements" data-ice="link">Statements</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#scope-and-closures" data-ice="link">Scope and Closures</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#scope" data-ice="link">Scope</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#closures" data-ice="link">Closures</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/ES5.html"><a href="manual/ES5.html#singleton-pattern-returns-one-instance-of-an-object-containing-2-public-methods-" data-ice="link">Singleton pattern returns one instance of an object containing 2 public methods:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/ES5.html"><a href="manual/ES5.html#factory-constructor-pattern" data-ice="link">Factory/Constructor pattern</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#functions" data-ice="link">Functions</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#-code-this--code--and--code-arguments--code-" data-ice="link">this and arguments</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#prototypes--amp--inheritance--es5-" data-ice="link">Prototypes &amp; Inheritance (ES5)</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#class-and-subclass-with-object-create--" data-ice="link">Class and Subclass with Object.create()</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#constructor" data-ice="link">Constructor</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#-code-new--code--keyword-aka-constructor-call" data-ice="link">new keyword aka constructor call</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#example-of-protoype-with-shadowing--skipping-proto-chain-" data-ice="link">Example of Protoype with Shadowing (skipping proto chain)</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#object-linked-to-other-object-example--oloo-" data-ice="link">Object Linked To Other Object Example (OLOO)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#types" data-ice="link">Types</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#nan-value" data-ice="link">NaN Value</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#coercion" data-ice="link">Coercion</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#tilde-operator--" data-ice="link">Tilde operator ~</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/ES5.html"><a href="manual/ES5.html#type-coercion-of--code-----code-" data-ice="link">Type coercion of ==</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES5.html"><a href="manual/ES5.html#faulty-expression-statement" data-ice="link">Faulty expression statement</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/ES6.html"><a href="manual/ES6.html" data-ice="link">JavaScript (ES6)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES6.html"><a href="manual/ES6.html#number" data-ice="link">Number</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/ES6.html"><a href="manual/ES6.html#string" data-ice="link">String</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/fp.html"><a href="manual/fp.html" data-ice="link">Examples of Functional Programming Constructs in JavaScript</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#some-simple-unary-functions-" data-ice="link">Some simple unary functions:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-returns-a-function-that-returns-the-argument-" data-ice="link">A function that returns a function that returns the argument:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-adds-from-two-invocations-" data-ice="link">A function that adds from two invocations:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-a-binary-function-and-makes-it-callable-with-two-invocations" data-ice="link">A function that takes a binary function and makes it callable with two invocations</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-a-binary-function-and-an-argument-and-can-pass-another-argument" data-ice="link">A function that takes a binary function and an argument and can pass another argument</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#functions-that-add-1-to-arguments-" data-ice="link">Functions that add 1 to arguments:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-a-binary-function-that-returns-a-unary-function-that-passes-its-argument-twice-in-the-binary-function-" data-ice="link">A function that takes a binary function that returns a unary function that passes its argument twice in the binary function:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-reverse-the-order-of-the-arguments-of-a-binary-function-" data-ice="link">A function that reverse the order of the arguments of a binary function:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-two-unary-functions-that-returns-a-unary-function-that-calls-them-both-" data-ice="link">A function that takes two unary functions that returns a unary function that calls them both:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-two-binary-functions-that-returns-a-function-that-calls-them-both-" data-ice="link">A function that takes two binary functions that returns a function that calls them both:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-limits-the-number-of-times-a-binary-function-can-be-invoked-" data-ice="link">A function that limits the number of times a binary function can be invoked:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-generator-function-that-produces-a-series-of-values-" data-ice="link">A generator function that produces a series of values:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-a-generator-and-a-end-value-that-produces-value-up-to-that-end-value-" data-ice="link">A function that takes a generator and a end value that produces value up to that end value:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-a-start-and-end-value-and-produces-a-generator-that-will-produce-values-in-a-range-" data-ice="link">A function that takes a start and end value and produces a generator that will produce values in a range:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-an-array-and-a-generator-that-returns-a-generator-that-will-produce-elements-from-the-array-" data-ice="link">A function that takes an array and a generator that returns a generator that will produce elements from the array:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-takes-a-generator-and-an-array-and-will-produces-a-function-that-collects-the-result-in-the-array-" data-ice="link">A function that takes a generator and an array and will produces a function that collects the result in the array:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-filter-function-that-takes-a-generation-and-a-predicate--function-that-returns-bool--and-produces-a-generator-that-produces-only-the-values-approuved-by-the-predicate-" data-ice="link">A filter function that takes a generation and a predicate (function that returns bool) and produces a generator that produces only the values approuved by the predicate:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-concat-function-that-takes-two-generators-and-produce-a-generator-that-put-them-in-sequence-" data-ice="link">A concat function that takes two generators and produce a generator that put them in sequence:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/fp.html"><a href="manual/fp.html#a-function-that-makes-a-function-that-takes-a-character-string-and-generates-unique-symbols-" data-ice="link">A function that makes a function that takes a character string and generates unique symbols:</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="javascript">JavaScript</h1><h3 id="number">Number</h3><p>Always use the radix for parseInt function:</p>
+<pre><code><code class="source-code prettyprint">parseInt(&quot;12cows&quot;, 10);</code>
+</code></pre><p>Since some environment may interpret <code>&quot;012&quot;</code> as octal number.</p>
+<hr>
+<h3 id="string">String</h3><p>Strings in JavaScript are composed of 16-bit character.</p>
+<hr>
+<h3 id="statements">Statements</h3><p>For looping through Array or Objects, instead of using <code>for</code> or <code>for in</code> loops, one can use <code>Object.keys()</code> and <code>Array.prototype.every()</code>. The latter can take a callback function which must return a truthy value otherwhise every() stops.
+<code>Object.keys(obj)</code> returns an array of the own enumerable properties of the passed object.</p>
+<pre><code><code class="source-code prettyprint">Object.keys(obj)
+    .every(function(element, index, array) {
+        (obj[element]); // return the object property &quot;element&quot;
+        (array[index]);
+    return true;
+});</code>
+</code></pre><p>The main difference between <code>Object.keys</code> and <code>for in</code> is the former will only loop through <em>own</em> <em>enumerable</em> properties of the passed object. </p>
+<hr>
+<h3 id="scope-and-closures">Scope and Closures</h3><h4 id="scope">Scope</h4><p><em>Where to look for things</em></p>
+<p>Example of how the JS engine parses variable and function declaration on the first pass (compilation):</p>
+<pre><code><code class="source-code prettyprint">var foo = &quot;bar&quot;; // does foo exist in the scope ? let&apos;s create it.
+
+function bar() { // does bar exist in the scope ? let&apos;s create it.
+    console.log(foo); // not a declaration
+    var foo = &quot;baz&quot;; // another LHS (left handed assignment)
+    console.log(foo); // not a declaration
+}
+
+function baz(foo /* foo is created as formal variable inside (declaration) of baz */) { // create baz 
+    foo = &quot;bam&quot;; // not a declaration
+    bam = &quot;yay&quot;; // can&apos;t imply anything about bam
+}</code>
+</code></pre><p>On the second pass (execution):</p>
+<pre><code><code class="source-code prettyprint">var foo = &quot;bar&quot;; // does foo exist ? ok, assign it the &quot;bar&quot; value.
+
+function bar() { 
+    console.log(foo); // what is the value of foo ? undefined
+    var foo = &quot;baz&quot;; // ever heard of foo ? ok, assign it the &quot;baz&quot; value
+    console.log(foo); // what is the value of foo ? &quot;baz&quot;
+}
+
+function baz(foo) {
+    foo = &quot;bam&quot;; // know foo ? yes, assign it the &quot;bam&quot; value 
+    bam = &quot;yay&quot;; // know bam ? no, go up one level to find out, creates it on the global in non-strict mode
+}</code>
+</code></pre><h4 id="closures">Closures</h4><h5 id="singleton-pattern-returns-one-instance-of-an-object-containing-2-public-methods-">Singleton pattern returns one instance of an object containing 2 public methods:</h5><pre><code><code class="source-code prettyprint">var singleton = (function () {
+    var privateVariable;
+    function privateFunction(x) {
+        // private variable stuff
+    }
+    return {
+        firstMethod: function(a, b) {
+            // private variable
+        },
+        secondMethod: function(x) {
+            // private function...
+        }
+    };
+}())</code>
+</code></pre><p>This immediately invoked function will return the 2 methods which will have access to private var and private function. This will be true as long as the returned object lives. Immediately invoked function also prevent the pollution of the GLOBAL variable.</p>
+<h5 id="factory-constructor-pattern">Factory/Constructor pattern</h5><pre><code><code class="source-code prettyprint">function constructor(spec) {
+    var privateValue;
+    // here we can call another constructor to inherit from
+    var service = otherConstructor(spec),
+        instance,
+        method = function() {
+            // spec, instance, method, privateValue
+        };
+    service.method = method;
+    return service;
+}</code>
+</code></pre><p>The returned object have access to private <em>(close over...)</em> variables or private methods. Returned functions are pushed on the memory heap and <em>because of closure</em> the inner variables and methods that were linked to returned functions in the constructor <em>won&apos;t</em> get garbage collected. They will live as long as the returned object lives.</p>
+<hr>
+<h3 id="functions">Functions</h3><h4 id="-code-this--code--and--code-arguments--code-"><code>this</code> and <code>arguments</code></h4><p>In a function, <code>arguments</code> contains a pseudo array (only has a few methods) which contains all arguments that were passed in:</p>
+<pre><code><code class="source-code prettyprint">function sum() {
+    var total = 0, i, len = arguments.length;
+    for(i = 0; i &lt; len; i++) {
+        total += Number(arguments[i]);
+    }
+    return total;
+}</code>
+</code></pre><p><code>this</code> parameter contains a reference to the object of invocation. It allows a method to know what object it is concerned with.</p>
+<pre><code><code class="source-code prettyprint">function() {
+    (this); // if called in the global scope for example, this is the window object
+}</code>
+</code></pre><p>An example of lexical <code>this</code> with the <code>Function.Prototype.bind()</code> method</p>
+<pre><code><code class="source-code prettyprint">function mod(){
+    this.text = &apos;world&apos;;
+    function helloUndefined() {
+        return this.text;
+    }
+    function hello(){
+      this.text = &apos;hello&apos;
+      return this.text;
+    }
+    function helloWithBind(){
+        return this.text;
+    }
+    return {
+        helloUndefined: helloUndefined,
+        hello: hello,
+        helloWithBind: helloWithBind.bind(this)
+        }
+}
+
+var service = mod();
+console.log(service.helloUndefined()); // underfined
+console.log(service.hello()); // &apos;hello&apos;
+console.log(service.helloWithBind()); // &apos;world&apos;</code>
+</code></pre><hr>
+<h3 id="prototypes--amp--inheritance--es5-">Prototypes &amp; Inheritance (ES5)</h3><h4 id="class-and-subclass-with-object-create--">Class and Subclass with Object.create()</h4><pre><code><code class="source-code prettyprint">function Car() {
+    this.age = 12;
+    this.grow = function grow() {
+        this.age += 1;
+    }
+}
+
+function Honda() {
+    Car.call(this); // to inherit props
+    this.age = 14;
+}
+
+Honda.prototype = Object.create(Car.prototype); // sets proto, but overrides the constructor;
+Honda.prototype.constructor = Honda; // this is probably what we want
+
+var honda1 = new Honda();
+honda1.age = 14;
+honda1.grow();
+console.log(honda1.age); // 15;</code>
+</code></pre><h4 id="constructor">Constructor</h4><p>A constructor makes an object linked to its own prototype.</p>
+<h4 id="-code-new--code--keyword-aka-constructor-call"><code>new</code> keyword aka constructor call</h4><pre><code><code class="source-code prettyprint">function bar() {
+    console.log(&apos;bar&apos;);
+}
+var foo = new bar(); // four things happen:
+// 1. brand new object is created
+// 2. newly created object is linked to another object (bar)
+// 3. newly created object is passed as `this` in the function call
+// 4. return this (the object)</code>
+</code></pre><p>Another example with <code>Date()</code></p>
+<pre><code><code class="source-code prettyprint">var date = Date()
+undefined
+
+var dateObject = new Date()
+undefined
+
+date.constructor
+&#x192; String() { [native code] }
+
+dateObject.constructor
+&#x192; Date() { [native code] }
+
+date.__proto__
+// has String as proto
+String {[[PrimitiveValue]]: &quot;&quot;, length: 0, constructor: &#x192;, charAt: &#x192;, charCodeAt: &#x192;, codePointAt: &#x192;, &#x2026;} 
+
+dateObject.__proto__
+// has Date as proto
+{constructor: &#x192;, toString: &#x192;, toDateString: &#x192;, toTimeString: &#x192;, toISOString: &#x192;, &#x2026;} </code>
+</code></pre><h4 id="example-of-protoype-with-shadowing--skipping-proto-chain-">Example of Protoype with Shadowing (skipping proto chain)</h4><p><img src="https://user-images.githubusercontent.com/9644867/33003876-88df8de0-cd8b-11e7-8e0f-2ec78945c40e.png" alt="image"></p>
+<pre><code><code class="source-code prettyprint">// create function Foo with a prop called .prototype
+// the prototype&apos;s constructor is the function Foo
+// there is also a relationship between Foo&apos;s proto and Object.prototype
+function Foo(who) {
+    this.me = who;
+}
+Foo.prototype.identify = function() {
+    return &quot;I am &quot; + this.me;
+}
+
+// create a new object
+// link new object to Foo&apos;s proto
+// pass the object as this in Foo
+// return the object (same for a2)
+var a1 = new Foo(&quot;a1&quot;);
+var a2 = new Foo(&quot;a2&quot;);
+
+// assignment to the a2 object (not through the prototype chain)
+a2.speak = function() {
+    alert(&quot;Hello, &quot; + this.identify() + &quot;.&quot;);
+}
+
+// a1 doesn&apos;t have a proto, but higher in the chain,
+// Foo.prototype is the first one up
+a1.constructor === Foo;
+a1.constructor === a2.constructor;
+
+a1.__proto__ === Foo.constructor; // access __proto__ goes to Foo.prototype
+Object.getPrototypeOf(a1); // IE 6-11 __proto__ is not available
+a1.__proto__ === a2.__proto__;
+
+// shadowing
+a1.identify = function() {
+    Foo.prototype.identify.call(this); // &lt;-- skip the prototype chain and call the 
+    // prototype directly
+}</code>
+</code></pre><h4 id="object-linked-to-other-object-example--oloo-">Object Linked To Other Object Example (OLOO)</h4><p><img src="https://user-images.githubusercontent.com/9644867/33156910-3447f82e-cfcc-11e7-9bd8-3405ed354725.png" alt="image"></p>
+<pre><code><code class="source-code prettyprint">var Foo = {
+    init: function (who) {
+        this.me = who;
+    },
+    identify: function() {
+        return &quot;I am &quot; + this.me;
+    }
+};
+
+var Bar = Object.create(Foo);
+
+Bar.speak = function() {
+    alert(&quot;hello, &quot; + this.identify());
+};
+
+var b1 = Object.create(Bar);
+b1.init(&quot;b1&quot;);
+b1.speak(); // alerts: &quot;hello, I am b1&quot;;</code>
+</code></pre><hr>
+<h3 id="types">Types</h3><p>Native types: <code>number</code>, <code>boolean</code>, <code>object</code>, <code>undefined</code>, <code>string</code></p>
+<p><code>function</code> is not a primitive type since it&apos;s based on object, but is callable.</p>
+<h4 id="nan-value">NaN Value</h4><pre><code><code class="source-code prettyprint">&quot;a&quot; / 2         // gives NaN
+isNaN()         // built-in method to check for NaN value (convert to number first)
+Number.isNaN()  // more robust method</code>
+</code></pre><hr>
+<h3 id="coercion">Coercion</h3><h4 id="tilde-operator--">Tilde operator ~</h4><pre><code><code class="source-code prettyprint">var foo = &quot;foo&quot;;
+
+// -1 did not find it
+if (~foo.indexOf(&quot;f&quot;)) {
+    alert(&quot;Found it!&quot;);
+}</code>
+</code></pre><p>Bitwise negate (adding one to it and negating).</p>
+<h4 id="type-coercion-of--code-----code-">Type coercion of <code>==</code></h4><p><code>==</code> does weird type coercion like</p>
+<pre><code><code class="source-code prettyprint">&apos;&apos; == &apos;0&apos;           // false
+false == &apos;false&apos;    // false
+&quot; \t\r\n &quot; == 0     // true</code>
+</code></pre><p>Always use <code>===</code></p>
+<hr>
+<h3 id="faulty-expression-statement">Faulty expression statement</h3><pre><code><code class="source-code prettyprint">return
+
+{
+    ok: true
+};</code>
+</code></pre><p>Because of automatic semicolons insertion, above code is equivalent to an expression statement :</p>
+<pre><code><code class="source-code prettyprint">return;
+
+{ 
+    ok:true 
+};</code>
+</code></pre><p>Always write</p>
+<pre><code><code class="source-code prettyprint">return {
+    ok: true 
+};</code>
+</code></pre><hr>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
