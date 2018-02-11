@@ -52,9 +52,11 @@
           "index": "./src/index.md",
           "asset": "./assets",
           "files": [
-            "./src/javascript/ES5.md",
-            "./src/javascript/ES6.md",
-            "./src/javascript/fp.md"
+            "./src/manual/git.md",
+            "./src/manual/npm.md",
+            "./src/manual/javascript-es5.md",
+            "./src/manual/javascript-fp.md",
+            "./src/manual/docker.md"
           ]
         }
       }

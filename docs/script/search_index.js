@@ -1,41 +1,5 @@
 window.esdocSearchIndex = [
   [
-    "notes/src/javascript/js.js~add",
-    "function/index.html#static-function-add",
-    "<span>add</span> <span class=\"search-result-import-path\">notes/src/javascript/js.js</span>",
-    "function"
-  ],
-  [
-    "notes/src/typescript/js.js~add",
-    "function/index.html#static-function-add",
-    "<span>add</span> <span class=\"search-result-import-path\">notes/src/typescript/js.js</span>",
-    "function"
-  ],
-  [
-    "notes/src/javascript/js.js~mul",
-    "function/index.html#static-function-mul",
-    "<span>mul</span> <span class=\"search-result-import-path\">notes/src/javascript/js.js</span>",
-    "function"
-  ],
-  [
-    "notes/src/typescript/js.js~mul",
-    "function/index.html#static-function-mul",
-    "<span>mul</span> <span class=\"search-result-import-path\">notes/src/typescript/js.js</span>",
-    "function"
-  ],
-  [
-    "notes/src/javascript/js.js~sub",
-    "function/index.html#static-function-sub",
-    "<span>sub</span> <span class=\"search-result-import-path\">notes/src/javascript/js.js</span>",
-    "function"
-  ],
-  [
-    "notes/src/typescript/js.js~sub",
-    "function/index.html#static-function-sub",
-    "<span>sub</span> <span class=\"search-result-import-path\">notes/src/typescript/js.js</span>",
-    "function"
-  ],
-  [
     "src/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "src/.external-ecmascript.js~Array",
@@ -316,17 +280,5 @@ window.esdocSearchIndex = [
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
     "src/.external-ecmascript.js~undefined",
     "external"
-  ],
-  [
-    "src/javascript/js.js",
-    "file/src/javascript/js.js.html",
-    "src/javascript/js.js",
-    "file"
-  ],
-  [
-    "src/typescript/js.js",
-    "file/src/typescript/js.js.html",
-    "src/typescript/js.js",
-    "file"
   ]
 ]

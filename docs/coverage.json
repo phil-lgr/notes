@@ -1,25 +1,6 @@
 {
   "coverage": "0%",
-  "expectCount": 6,
+  "expectCount": 0,
   "actualCount": 0,
-  "files": {
-    "src/javascript/js.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        1,
-        5,
-        9
-      ]
-    },
-    "src/typescript/js.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        1,
-        5,
-        9
-      ]
-    }
-  }
+  "files": {}
 }
