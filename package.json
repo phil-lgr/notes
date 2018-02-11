@@ -1,0 +1,49 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Personal notes",
+  "main": "index.js",
+  "config": {
+    "ports": {
+      "dev": 8000,
+      "prod": 8002
+    }
+  },
+  "scripts": {
+    "start": "              echo 'Generating doc...' &               npm-run-all esdoc -p serve watch",
+    "serve": "              echo 'Serving docs...' &                 npm-run-all \"http-server -- docs\"",
+    "esdoc": "                                                       esdoc",
+    "watch": "                                                       onchange \".esdoc.json\" \"src/**/*.md\" \"src/**/*.js\" -e \"src/.external-ecmascript.js\" -- npm run esdoc",
+    "prestart": "                                                    npm-run-all clear",
+    "http-server": "                                                 cross-var http-server -s -g -a localhost -c-1 -p $npm_package_config_ports_prod",
+    "clear": "                                                       node -p \"require('./node_modules/console-clear/index.js')(); (function(){return ''})()\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phil-lgr/notes.git"
+  },
+  "keywords": [
+    "javascript",
+    "git",
+    "npm",
+    "node",
+    "web",
+    "dom"
+  ],
+  "author": "phil-lgr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phil-lgr/notes/issues"
+  },
+  "homepage": "https://github.com/phil-lgr/notes#readme",
+  "devDependencies": {
+    "console-clear": "1.1.0",
+    "cross-env": "5.1.3",
+    "cross-var": "1.1.0",
+    "esdoc": "1.0.4",
+    "esdoc-standard-plugin": "1.0.0",
+    "http-server": "0.11.1",
+    "npm-run-all": "4.1.2",
+    "onchange": "3.3.0"
+  }
+}

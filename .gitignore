@@ -1,2 +1,35 @@
-# Created by .ignore support plugin (hsz.mobi)
-.idea/
+# IDEs
+.vscode
+.idea
+
+# system
+Thumbs.db
+ehthumbs.db
+.DS_Store
+logs
+*.log
+*.swp
+pids
+*.pid
+*.seed
+*.iml
+.lock-wscript
+
+# npm
+node_modules
+npm-debug.log
+package-lock.json
+npm-shrinkwrap.json
+
+# application
+dist/
+sw/dist
+/doc/
+/docs
+vendor/dll/
+
+/sw/dist/
+
+# others
+lib-cov
+/tsd_typings/
