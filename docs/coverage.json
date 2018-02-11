@@ -12,7 +12,7 @@
         9
       ]
     },
-    "src/TypeScript/js.js": {
+    "src/typescript/js.js": {
       "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [

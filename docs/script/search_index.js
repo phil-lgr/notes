@@ -1,20 +1,14 @@
 window.esdocSearchIndex = [
   [
-    "notes/src/typescript/js.js~add",
-    "function/index.html#static-function-add",
-    "<span>add</span> <span class=\"search-result-import-path\">notes/src/TypeScript/js.js</span>",
-    "function"
-  ],
-  [
     "notes/src/javascript/js.js~add",
     "function/index.html#static-function-add",
     "<span>add</span> <span class=\"search-result-import-path\">notes/src/javascript/js.js</span>",
     "function"
   ],
   [
-    "notes/src/typescript/js.js~mul",
-    "function/index.html#static-function-mul",
-    "<span>mul</span> <span class=\"search-result-import-path\">notes/src/TypeScript/js.js</span>",
+    "notes/src/typescript/js.js~add",
+    "function/index.html#static-function-add",
+    "<span>add</span> <span class=\"search-result-import-path\">notes/src/typescript/js.js</span>",
     "function"
   ],
   [
@@ -24,15 +18,21 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "notes/src/typescript/js.js~sub",
-    "function/index.html#static-function-sub",
-    "<span>sub</span> <span class=\"search-result-import-path\">notes/src/TypeScript/js.js</span>",
+    "notes/src/typescript/js.js~mul",
+    "function/index.html#static-function-mul",
+    "<span>mul</span> <span class=\"search-result-import-path\">notes/src/typescript/js.js</span>",
     "function"
   ],
   [
     "notes/src/javascript/js.js~sub",
     "function/index.html#static-function-sub",
     "<span>sub</span> <span class=\"search-result-import-path\">notes/src/javascript/js.js</span>",
+    "function"
+  ],
+  [
+    "notes/src/typescript/js.js~sub",
+    "function/index.html#static-function-sub",
+    "<span>sub</span> <span class=\"search-result-import-path\">notes/src/typescript/js.js</span>",
     "function"
   ],
   [
@@ -318,15 +318,15 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/typescript/js.js",
-    "file/src/TypeScript/js.js.html",
-    "src/TypeScript/js.js",
-    "file"
-  ],
-  [
     "src/javascript/js.js",
     "file/src/javascript/js.js.html",
     "src/javascript/js.js",
+    "file"
+  ],
+  [
+    "src/typescript/js.js",
+    "file/src/typescript/js.js.html",
+    "src/typescript/js.js",
     "file"
   ]
 ]

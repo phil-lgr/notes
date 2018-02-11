@@ -4,6 +4,15 @@
   "index": "./README.md",
   "plugins": [
     {
+      "name": "esdoc-inject-style-plugin",
+      "option": {
+        "enable": true,
+        "styles": [
+          "./assets/styles.css"
+        ]
+      }
+    },
+    {
       "name": "esdoc-standard-plugin",
       "option": {
         "lint": {
@@ -29,7 +38,17 @@
         "typeInference": {
           "enable": true
         },
+        "brand": {
+          "logo": "./assets/logo.png",
+          "title": "Personal Notes",
+          "description": "Personal Notes",
+          "repository": "https://github.com/phil-lgr/notes",
+          "site": "https://phil-lgr.github.io/notes/",
+          "author": "https://twitter.com/phil_lgr",
+          "image": "https://avatars1.githubusercontent.com/u/9644867?s=400&u=87e4a2e34eaf9bf6f06d7ae1b16ab8e1354d29f3&v=4"
+        },
         "manual": {
+          "globalIndex": true,
           "index": "./src/index.md",
           "asset": "./assets",
           "files": [
