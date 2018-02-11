@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | Personal Notes</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<link rel="stylesheet" href="./inject/css/0-styles.css"><meta name="description" content="Personal Notes"><meta property="og:type" content="website"><meta property="og:url" content="https://phil-lgr.github.io/notes/"><meta property="og:site_name" content="Personal Notes"><meta property="og:title" content="Personal Notes"><meta property="og:image" content="https://avatars1.githubusercontent.com/u/9644867?s=400&amp;u=87e4a2e34eaf9bf6f06d7ae1b16ab8e1354d29f3&amp;v=4"><meta property="og:description" content="Personal Notes"><meta property="og:author" content="https://twitter.com/phil_lgr"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Personal Notes"><meta property="twitter:description" content="Personal Notes"><meta property="twitter:image" content="https://avatars1.githubusercontent.com/u/9644867?s=400&amp;u=87e4a2e34eaf9bf6f06d7ae1b16ab8e1354d29f3&amp;v=4"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/phil-lgr/notes"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/git.html"><a href="manual/git.html" data-ice="link">git</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/npm.html"><a href="manual/npm.html" data-ice="link">npm</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html" data-ice="link">JavaScript</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#number" data-ice="link">Number</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#string" data-ice="link">String</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#statements" data-ice="link">Statements</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#scope-and-closures" data-ice="link">Scope and Closures</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#scope" data-ice="link">Scope</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#closures" data-ice="link">Closures</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#singleton-pattern-returns-one-instance-of-an-object-containing-2-public-methods-" data-ice="link">Singleton pattern returns one instance of an object containing 2 public methods:</a></li>
+<li data-ice="manualNav" class="indent-h5" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#factory-constructor-pattern" data-ice="link">Factory/Constructor pattern</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#functions" data-ice="link">Functions</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#-code-this--code--and--code-arguments--code-" data-ice="link">this and arguments</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#prototypes--amp--inheritance--es5-" data-ice="link">Prototypes &amp; Inheritance (ES5)</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#class-and-subclass-with-object-create--" data-ice="link">Class and Subclass with Object.create()</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#constructor" data-ice="link">Constructor</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#-code-new--code--keyword-aka-constructor-call" data-ice="link">new keyword aka constructor call</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#example-of-protoype-with-shadowing--skipping-proto-chain-" data-ice="link">Example of Protoype with Shadowing (skipping proto chain)</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#object-linked-to-other-object-example--oloo-" data-ice="link">Object Linked To Other Object Example (OLOO)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#types" data-ice="link">Types</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#nan-value" data-ice="link">NaN Value</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#coercion" data-ice="link">Coercion</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#tilde-operator--" data-ice="link">Tilde operator ~</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#type-coercion-of--code-----code-" data-ice="link">Type coercion of ==</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/javascript-es5.html"><a href="manual/javascript-es5.html#faulty-expression-statement" data-ice="link">Faulty expression statement</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/javascript-fp.html"><a href="manual/javascript-fp.html" data-ice="link">FP</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/javascript-fp.html"><a href="manual/javascript-fp.html#unary-function" data-ice="link">Unary Function</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/javascript-fp.html"><a href="manual/javascript-fp.html#identity-function" data-ice="link">Identity Function</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/javascript-fp.html"><a href="manual/javascript-fp.html#currying" data-ice="link">Currying</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/javascript-fp.html"><a href="manual/javascript-fp.html#binary-function" data-ice="link">Binary Function</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/javascript-fp.html"><a href="manual/javascript-fp.html#generator" data-ice="link">Generator</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/docker.html"><a href="manual/docker.html" data-ice="link">Docker</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="fp">FP</h1><h2 id="unary-function">Unary Function</h2><p>Simple unary functions:</p>
+<pre><code><code class="source-code prettyprint">function add(a, b) {
+  return a + b;
+}
+
+function sub(a, b) {
+  return a - b;
+}
+
+function mul(a, b) {
+  return a * b;
+}</code>
+</code></pre><h2 id="identity-function">Identity Function</h2><p>A function that returns a function that returns the argument:</p>
+<pre><code><code class="source-code prettyprint">function identityf(number) {
+  return function() {
+    return number;
+  }
+}</code>
+</code></pre><p>A function that adds from two invocations:</p>
+<pre><code><code class="source-code prettyprint">function addf(outer) {
+  return function(inner) {
+    return outer + inner;
+  }
+}
+addf(3)(4);</code>
+</code></pre><h2 id="currying">Currying</h2><p>A function that takes a binary function and makes it callable with two invocations</p>
+<p><em>currying</em>: decomposing multiple arguments functions into multiple functions that takes a single argument</p>
+<pre><code><code class="source-code prettyprint">function liftf(bin) {
+  return function(first) {
+    return function(second) {
+      return bin(first, second);
+    }
+  }
+}
+var addf = liftf(add);
+addf(3)(4);
+liftf(mul)(5)(6);</code>
+</code></pre><p>A function that takes a binary function and an argument and can pass another argument</p>
+<pre><code><code class="source-code prettyprint">function curry(bin, first) {
+  return liftf(bin)(first);
+}
+
+var add3 = curry(add, 3);
+add3(4)
+curry(mul, 5)(6);</code>
+</code></pre><p><em>In ES6</em> we can use the spread operator:</p>
+<pre><code><code class="source-code prettyprint">function curryES6(func, ...first) {
+// ellipsis ... takes all the args put them in an array and bind array to parameters
+  return function(...second) {
+    return func(...first, ...second);
+  }
+}</code>
+</code></pre><p>Functions that add 1 to arguments:</p>
+<pre><code><code class="source-code prettyprint">var inc = liftf(add)(1);
+var inc2 = curry(add, 1);
+var inc3 = addf(1);
+inc3(5);
+inc3(inc(5));</code>
+</code></pre><p>A function that takes a binary function that returns a unary function that passes its argument twice in the binary function:</p>
+<pre><code><code class="source-code prettyprint">function twice(bin) {
+  return function(number) {
+    return bin(number, number);
+  }
+}
+var doubl = twice(add);
+var square = twice(mul);
+doubl(11); 
+square(11);</code>
+</code></pre><p>A function that reverse the order of the arguments of a binary function:</p>
+<pre><code><code class="source-code prettyprint">function reverse(bin) {
+  return function(...args) {
+    return bin(...args.reverse());
+  }
+}
+
+var bus = reverse(sub);
+bus(3,2);</code>
+</code></pre><p>A function that takes two unary functions that returns a unary function that calls them both:</p>
+<pre><code><code class="source-code prettyprint">function composeu(unary1, unary2) {
+  return function(number) {
+    return unary2(unary1(number));
+  }
+}
+
+composeu(doubl, square)(5); // 100</code>
+</code></pre><h2 id="binary-function">Binary Function</h2><p>A function that takes two binary functions that returns a function that calls them both:</p>
+<pre><code><code class="source-code prettyprint">function composeb(bin1, bin2) {
+  return function(a, b, c) {
+    return bin2(bin1(a, b), c);
+  }
+}
+
+composeb(add, mul)(2, 3, 7); // 35</code>
+</code></pre><p>A function that limits the number of times a binary function can be invoked:</p>
+<pre><code><code class="source-code prettyprint">function limit(bin, limitN) {
+  var counter = limitN || 1;
+  return function(a, b) {
+    if(counter) {
+      counter -= 1;
+      return bin(a, b);
+    } else {
+      return undefined;
+    }
+  }
+}
+
+var add_limited = limit(add, 2);
+add_limited(1, 2); // 3
+add_limited(1, 2); // 3
+add_limited(1, 2); // undefined</code>
+</code></pre><h2 id="generator">Generator</h2><p>A generator function that produces a series of values:</p>
+<pre><code><code class="source-code prettyprint">function from(number) {
+  return function() {
+    return number++; // function closes over the outer function parameter
+  }
+}
+
+var index = from(0);
+index(); // 0
+index(); // 1</code>
+</code></pre><p>A function that takes a generator and a end value that produces value up to that end value:</p>
+<pre><code><code class="source-code prettyprint">function to(gen, end) {
+  return function() {
+    var value = gen();
+    if (value &lt; end) {
+      return value;
+    }
+  }
+}
+
+var index = to(from(1), 3);
+index(); // 1
+index(); // 2
+index(); // undefined</code>
+</code></pre><p>A function that takes a start and end value and produces a generator that will produce values in a range:</p>
+<pre><code><code class="source-code prettyprint">function fromTo(begin, end) {
+  return to(from(begin), end);
+}
+
+var index = fromTo(0, 3);
+index(); // 0
+index(); // 1
+index(); // 2
+index(); // undefined</code>
+</code></pre><p>A function that takes an array and a generator that returns a generator that will produce elements from the array:</p>
+<pre><code><code class="source-code prettyprint">function element(array, fromToGen) {
+  return function() {
+    var index = fromToGen();
+    if (index !== undefined) { // protects the function from the array containing the value *undefined*
+      return array[index];
+    }
+  }
+}
+
+var ele = element([&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;], fromTo(1, 3));
+ele(); // b
+ele(); // c
+ele(); // undefined</code>
+</code></pre><p>With the generator optional:</p>
+<pre><code><code class="source-code prettyprint">function element(array, fromToGen) {
+  return function() {
+    var value;
+    // making the generator optional
+    // if (fromToGen === undefined) {
+    //   fromToGen = fromTo(0, array.length);
+    // }
+    // better, since we check if the passed argument is explicitely a function
+    if (typeof(fromToGen) !== &quot;function&quot;) {
+      fromToGen = fromTo(0, array.length);
+    }
+    value = array[fromToGen()];
+
+    if (value !== undefined) {
+      return value;
+    }
+  }
+}
+
+var ele = element([&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;]);
+ele(); // b
+ele(); // c</code>
+</code></pre><p>A function that takes a generator and an array and will produces a function that collects the result in the array:</p>
+<pre><code><code class="source-code prettyprint">function collect(gen, array){
+  return function(){
+    var value;
+    if(typeof(gen) !== &quot;function&quot;){
+      throw &quot;gen must be a generator&quot;;
+    } else {
+      value = gen();
+      if(value !== undefined){
+        array.push(value);
+      }
+      return value;
+    }
+  }
+}
+
+var array = [];
+var col = collect(fromTo(0, 2), array);
+col(); // 0
+col(); // 1
+col(); // undefined
+array; // [0, 1]</code>
+</code></pre><p>A filter function that takes a generation and a predicate (function that returns bool) and produces a generator that produces only the values approuved by the predicate:</p>
+<pre><code><code class="source-code prettyprint">function filter(gen, predicate) {
+  return function() {
+    var value = gen();
+    while (value !== undefined) {
+      if (predicate(value)) {
+        return value;
+      }
+      value = gen();
+    }
+  }
+}
+
+var fil = filter(fromTo(0, 5),
+  function third(value) {
+    return (value % 3) === 0;
+  });
+
+fil(); // 0
+fil(); // 3
+fil(); // undefined</code>
+</code></pre><p>A concat function that takes two generators and produce a generator that put them in sequence:</p>
+<pre><code><code class="source-code prettyprint">function concat(gen1, gen2) {
+  return function() {
+    var value;
+
+    value = gen1();
+
+    if (value !== undefined) {
+      return value;
+    }
+
+    value = gen2();
+
+    if (value !== undefined) {
+      return value;
+    }
+
+  }
+}
+
+var con = concat(fromTo(0, 3), fromTo(0, 2));
+con(); // 0
+con(); // 1
+con(); // 2
+con(); // 0
+con(); // 1 
+con(); // undefined</code>
+</code></pre><p>A function that makes a function that takes a character string and generates unique symbols:</p>
+<pre><code><code class="source-code prettyprint">function gensymf(char){
+  var index = 1;
+  return function(){
+    return char+index++;
+  }
+}
+
+var geng = gensymf(&quot;G&quot;), genh = gensymf(&quot;H&quot;);
+
+geng(); // G1
+geng(); // G2
+genh(); // H1
+genh(); // H2</code>
+</code></pre></div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

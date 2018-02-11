@@ -5,7 +5,7 @@
 # aliases
 git config --global alias.c "commit"
 git config --global alias.ck "checkout"
-git config --global alias.a "commit --all"
+git config --global alias.a "add --all"
 git config --global alias.p "push"
 git config --global alias.s "status"
 git config --global alias.up "pull upstream master"
