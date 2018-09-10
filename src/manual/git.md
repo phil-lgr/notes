@@ -11,6 +11,7 @@ git config --global alias.s "status"
 git config --global alias.up "pull upstream master"
 git config --global alias.tree-stat "log --graph --all --decorate --stat --date=iso"
 git config --global alias.tree "log --graph --all --decorate=short --date=iso --oneline"
+git config --global alias.ca "commit --amend --no-edit"
 
 # default config
 git config --global branch.autosetuprebase always
